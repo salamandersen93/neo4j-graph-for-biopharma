@@ -1,0 +1,29 @@
+employeeId,name,email,role,department
+E1001,Claire Alvarez,claire.alvarez@meridianbio.example,Upstream Operator,Upstream Manufacturing
+E1002,Grace Alvarez,grace.alvarez@meridianbio.example,Upstream Operator,Upstream Manufacturing
+E1003,Hannah Murphy,hannah.murphy@meridianbio.example,Upstream Operator,Upstream Manufacturing
+E1004,Olivia Murphy,olivia.murphy@meridianbio.example,Upstream Operator,Upstream Manufacturing
+E1005,Ethan Yamamoto,ethan.yamamoto@meridianbio.example,Downstream Operator,Downstream Manufacturing
+E1006,Rachel Singh,rachel.singh@meridianbio.example,Downstream Operator,Downstream Manufacturing
+E1007,Grace Murphy,grace.murphy@meridianbio.example,Downstream Operator,Downstream Manufacturing
+E1008,Wei Cohen,wei.cohen@meridianbio.example,Downstream Operator,Downstream Manufacturing
+E1009,Nadia Moreau,nadia.moreau@meridianbio.example,Downstream Operator,Downstream Manufacturing
+E1010,Claire Nguyen,claire.nguyen@meridianbio.example,Process Scientist,MS&T
+E1011,Claire Tanaka,claire.tanaka@meridianbio.example,Process Scientist,MS&T
+E1012,Ravi Rossi,ravi.rossi@meridianbio.example,Process Scientist,MS&T
+E1013,Priya Chen,priya.chen@meridianbio.example,QA Reviewer,Quality Assurance
+E1014,Aisha Moreau,aisha.moreau@meridianbio.example,QA Reviewer,Quality Assurance
+E1015,Ravi Dubois,ravi.dubois@meridianbio.example,QC Analyst,QC Biochemistry
+E1016,Priya Singh,priya.singh@meridianbio.example,QC Analyst,QC Biochemistry
+E1017,Maria Walsh,maria.walsh@meridianbio.example,QC Analyst,QC Biochemistry
+E1018,Diego Petrov,diego.petrov@meridianbio.example,QC Analyst,QC Biochemistry
+E1019,Olivia Ibrahim,olivia.ibrahim@meridianbio.example,QC Reviewer,QC Biochemistry
+E1020,Andre Singh,andre.singh@meridianbio.example,QC Reviewer,QC Biochemistry
+E1021,Samuel Chen,samuel.chen@meridianbio.example,QC Analyst,QC Microbiology
+E1022,Aisha Cohen,aisha.cohen@meridianbio.example,QC Analyst,QC Microbiology
+E1023,Ravi Murphy,ravi.murphy@meridianbio.example,QC Reviewer,QC Microbiology
+E1024,Elena Chen,elena.chen@meridianbio.example,QC Analyst,QC Molecular Biology
+E1025,Hannah Singh,hannah.singh@meridianbio.example,QC Reviewer,QC Molecular Biology
+E1026,Peter Yamamoto,peter.yamamoto@meridianbio.example,QC Analyst,Analytical Development
+E1027,Lucas Lindqvist,lucas.lindqvist@meridianbio.example,QC Analyst,Analytical Development
+E1028,Omar Alvarez,omar.alvarez@meridianbio.example,QC Reviewer,Analytical Development

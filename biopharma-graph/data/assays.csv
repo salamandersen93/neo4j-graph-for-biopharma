@@ -1,0 +1,11 @@
+methodId,name,technique,version,status,instrumentType,description
+AM-TITER-001,Titer by Protein A HPLC,HPLC,2.0,Validated,HPLC,Titer by Protein A HPLC. Validated per ICH Q2(R2); executed under GMP controls.
+AM-SEC-001,Purity by SEC-HPLC,HPLC,4.0,Validated,HPLC,Purity by SEC-HPLC. Validated per ICH Q2(R2); executed under GMP controls.
+AM-CIEF-001,Charge Variants by cIEF,Capillary IEF,3.0,Validated,Capillary Electrophoresis,Charge Variants by cIEF. Validated per ICH Q2(R2); executed under GMP controls.
+AM-HCP-001,Host Cell Protein ELISA,ELISA,2.0,Validated,Plate Reader,Host Cell Protein ELISA. Validated per ICH Q2(R2); executed under GMP controls.
+AM-PRA-001,Residual Protein A ELISA,ELISA,3.0,Validated,Plate Reader,Residual Protein A ELISA. Validated per ICH Q2(R2); executed under GMP controls.
+AM-A280-001,Protein Concentration by A280,UV-Vis,4.0,Validated,UV-Vis,Protein Concentration by A280. Validated per ICH Q2(R2); executed under GMP controls.
+AM-PH-001,pH by Potentiometry,Potentiometry,2.0,Validated,pH Meter,pH by Potentiometry. Validated per ICH Q2(R2); executed under GMP controls.
+AM-ENDO-001,Endotoxin by Kinetic Chromogenic LAL,Kinetic LAL,3.0,Validated,Plate Reader,Endotoxin by Kinetic Chromogenic LAL. Validated per ICH Q2(R2); executed under GMP controls.
+AM-BIOB-001,Bioburden by Membrane Filtration,Membrane filtration,3.0,Validated,,Bioburden by Membrane Filtration. Validated per ICH Q2(R2); executed under GMP controls.
+AM-DNA-001,Residual Host Cell DNA by qPCR,qPCR,4.0,Validated,qPCR,Residual Host Cell DNA by qPCR. Validated per ICH Q2(R2); executed under GMP controls.

@@ -1,0 +1,18 @@
+# Manual only. Runs the READ-ONLY queries against your Aura instance and fails if any query errors.
+# Needs repository secrets: NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD (and optionally NEO4J_DATABASE).
+name: aura-smoke
+on: workflow_dispatch
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: python3 tools/run_queries.py
+        env:
+          NEO4J_URI: ${{ secrets.NEO4J_URI }}
+          NEO4J_USERNAME: ${{ secrets.NEO4J_USERNAME }}
+          NEO4J_PASSWORD: ${{ secrets.NEO4J_PASSWORD }}
+          NEO4J_DATABASE: ${{ secrets.NEO4J_DATABASE }}

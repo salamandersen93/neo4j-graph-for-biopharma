@@ -1,0 +1,74 @@
+stepId,stepNumber,stepName,stepType,operatingParameters
+SOP-DSP-0101-v1.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 100 LMH
+SOP-DSP-0101-v1.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 30 g/L resin; elution pH 3.6
+SOP-DSP-0101-v1.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0101-v1.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 35 g/L; salt gradient elution
+SOP-DSP-0101-v1.0-S05,5,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0101-v1.0-S06,6,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0101-v1.0-S07,7,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 8 diavolumes into formulation buffer
+SOP-DSP-0101-v1.0-S08,8,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags
+SOP-DSP-0101-v2.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 120 LMH
+SOP-DSP-0101-v2.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 35 g/L resin; elution pH 3.6
+SOP-DSP-0101-v2.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0101-v2.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 40 g/L; salt gradient elution
+SOP-DSP-0101-v2.0-S05,5,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0101-v2.0-S06,6,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0101-v2.0-S07,7,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 10 diavolumes into formulation buffer
+SOP-DSP-0101-v2.0-S08,8,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags
+SOP-DSP-0202-v1.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 100 LMH
+SOP-DSP-0202-v1.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 30 g/L resin; elution pH 3.6
+SOP-DSP-0202-v1.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0202-v1.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 35 g/L; salt gradient elution
+SOP-DSP-0202-v1.0-S05,5,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0202-v1.0-S06,6,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0202-v1.0-S07,7,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 8 diavolumes into formulation buffer
+SOP-DSP-0202-v1.0-S08,8,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags
+SOP-DSP-0202-v2.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 120 LMH
+SOP-DSP-0202-v2.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 35 g/L resin; elution pH 3.6
+SOP-DSP-0202-v2.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0202-v2.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 40 g/L; salt gradient elution
+SOP-DSP-0202-v2.0-S05,5,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0202-v2.0-S06,6,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0202-v2.0-S07,7,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 10 diavolumes into formulation buffer
+SOP-DSP-0202-v2.0-S08,8,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags
+SOP-DSP-0303-v1.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 100 LMH
+SOP-DSP-0303-v1.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 30 g/L resin; elution pH 3.6
+SOP-DSP-0303-v1.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0303-v1.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 35 g/L; salt gradient elution
+SOP-DSP-0303-v1.0-S05,5,Hydrophobic Interaction Chromatography,Chromatography,Capto Phenyl ImpRes flow-through/weak partitioning; load <= 30 g/L
+SOP-DSP-0303-v1.0-S06,6,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0303-v1.0-S07,7,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0303-v1.0-S08,8,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 8 diavolumes into formulation buffer
+SOP-DSP-0303-v1.0-S09,9,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags
+SOP-DSP-0404-v1.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 100 LMH
+SOP-DSP-0404-v1.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 30 g/L resin; elution pH 3.6
+SOP-DSP-0404-v1.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0404-v1.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 35 g/L; salt gradient elution
+SOP-DSP-0404-v1.0-S05,5,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0404-v1.0-S06,6,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0404-v1.0-S07,7,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 8 diavolumes into formulation buffer
+SOP-DSP-0404-v1.0-S08,8,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags
+SOP-DSP-0404-v2.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 120 LMH
+SOP-DSP-0404-v2.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 35 g/L resin; elution pH 3.6
+SOP-DSP-0404-v2.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0404-v2.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 40 g/L; salt gradient elution
+SOP-DSP-0404-v2.0-S05,5,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0404-v2.0-S06,6,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0404-v2.0-S07,7,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 10 diavolumes into formulation buffer
+SOP-DSP-0404-v2.0-S08,8,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags
+SOP-DSP-0505-v1.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 100 LMH
+SOP-DSP-0505-v1.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 30 g/L resin; elution pH 3.6
+SOP-DSP-0505-v1.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0505-v1.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 35 g/L; salt gradient elution
+SOP-DSP-0505-v1.0-S05,5,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0505-v1.0-S06,6,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0505-v1.0-S07,7,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 8 diavolumes into formulation buffer
+SOP-DSP-0505-v1.0-S08,8,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags
+SOP-DSP-0505-v2.0-S01,1,Harvest Clarification,Filtration,Depth filtration then 0.2 um; flux <= 120 LMH
+SOP-DSP-0505-v2.0-S02,2,Protein A Affinity Capture,Chromatography,MabSelect SuRe; load <= 35 g/L resin; elution pH 3.6
+SOP-DSP-0505-v2.0-S03,3,Low pH Viral Inactivation,Viral Inactivation,pH 3.5 +/- 0.1; hold 60 +/- 5 min; neutralize to pH 5.5
+SOP-DSP-0505-v2.0-S04,4,Cation Exchange Chromatography,Chromatography,Capto S ImpAct bind-elute; load <= 40 g/L; salt gradient elution
+SOP-DSP-0505-v2.0-S05,5,Anion Exchange Chromatography,Chromatography,Capto Q flow-through; load <= 200 g/L
+SOP-DSP-0505-v2.0-S06,6,Viral Filtration,Viral Filtration,20 nm nanofilter; <= 2.0 bar; pre/post-use integrity test
+SOP-DSP-0505-v2.0-S07,7,Ultrafiltration/Diafiltration,UF/DF,30 kDa cassette; 10 diavolumes into formulation buffer
+SOP-DSP-0505-v2.0-S08,8,Final Filtration and Bulk Fill,Filtration,0.2 um sterile filtration; fill into single-use bags

@@ -1,0 +1,9 @@
+deviationId,deviationType,title,severity,status,openedDate,closedDate,rootCause,capaNumber
+DEV-24-001,Process Deviation,Low pH hold exceeded 60 min limit by 12 min,Major,Closed,2024-08-08T00:00:00Z,2024-08-26T00:00:00Z,Delayed neutralization; viral clearance impact assessment concluded no impact,CAPA-24-20
+DEV-24-002,Process Deviation,Protein A column pressure alarm; flow rate reduced per contingency,Minor,Closed,2024-11-23T00:00:00Z,2024-12-26T00:00:00Z,Resin bed compression; column repacked before next use,
+DEV-25-001,OOS Investigation,OOS Endotoxin - Drug Substance release,Major,Closed,2025-01-06T00:00:00Z,2025-01-26T00:00:00Z,Laboratory error: spike recovery outside 50-200%; run invalidated per SOP,CAPA-25-79
+DEV-25-002,OOS Investigation,OOS Host Cell Protein - Drug Substance release,Major,Closed,2025-02-28T00:00:00Z,2025-03-25T00:00:00Z,Laboratory error: plate washer dispense fault; run invalidated per SOP,CAPA-25-34
+DEV-25-003,OOS Investigation,OOS High Molecular Weight Species - Drug Substance release,Major,Closed,2025-08-20T00:00:00Z,2025-09-17T00:00:00Z,No assignable laboratory cause; result confirmed as product attribute,CAPA-25-57
+DEV-26-001,Process Deviation,Viral filter integrity test failed on first attempt; filter replaced and retested passing,Major,Closed,2026-04-18T00:00:00Z,2026-05-06T00:00:00Z,Incomplete filter wetting before test,CAPA-26-68
+DEV-26-002,OOS Investigation,OOS Host Cell Protein - Drug Substance release,Major,Open,2026-08-25T00:00:00Z,,,
+DEV-26-003,Process Deviation,Protein A column pressure alarm; flow rate reduced per contingency,Minor,Open,2026-10-02T00:00:00Z,,,

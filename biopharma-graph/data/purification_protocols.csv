@@ -1,0 +1,10 @@
+protocolId,documentNumber,name,version,status,effectiveDate,supersededDate,description
+SOP-DSP-0101-v1.0,SOP-DSP-0101,BTX-101 Drug Substance Purification,1.0,Superseded,2023-11-01T00:00:00Z,2025-07-01T00:00:00Z,Downstream purification of BTX-101 (Monoclonal antibody) from clarified CHO harvest to bulk drug substance.
+SOP-DSP-0101-v2.0,SOP-DSP-0101,BTX-101 Drug Substance Purification,2.0,Effective,2025-07-01T00:00:00Z,,Downstream purification of BTX-101 (Monoclonal antibody) from clarified CHO harvest to bulk drug substance.
+SOP-DSP-0202-v1.0,SOP-DSP-0202,BTX-202 Drug Substance Purification,1.0,Superseded,2023-11-01T00:00:00Z,2025-07-01T00:00:00Z,Downstream purification of BTX-202 (Monoclonal antibody) from clarified CHO harvest to bulk drug substance.
+SOP-DSP-0202-v2.0,SOP-DSP-0202,BTX-202 Drug Substance Purification,2.0,Effective,2025-07-01T00:00:00Z,,Downstream purification of BTX-202 (Monoclonal antibody) from clarified CHO harvest to bulk drug substance.
+SOP-DSP-0303-v1.0,SOP-DSP-0303,BTX-303 Drug Substance Purification,1.0,Effective,2025-06-01T00:00:00Z,,Downstream purification of BTX-303 (Bispecific antibody) from clarified CHO harvest to bulk drug substance.
+SOP-DSP-0404-v1.0,SOP-DSP-0404,BTX-404 Drug Substance Purification,1.0,Superseded,2023-11-01T00:00:00Z,2025-07-01T00:00:00Z,Downstream purification of BTX-404 (Fc-fusion protein) from clarified CHO harvest to bulk drug substance.
+SOP-DSP-0404-v2.0,SOP-DSP-0404,BTX-404 Drug Substance Purification,2.0,Effective,2025-07-01T00:00:00Z,,Downstream purification of BTX-404 (Fc-fusion protein) from clarified CHO harvest to bulk drug substance.
+SOP-DSP-0505-v1.0,SOP-DSP-0505,BTX-505 Drug Substance Purification,1.0,Superseded,2023-11-01T00:00:00Z,2025-07-01T00:00:00Z,Downstream purification of BTX-505 (Monoclonal antibody) from clarified CHO harvest to bulk drug substance.
+SOP-DSP-0505-v2.0,SOP-DSP-0505,BTX-505 Drug Substance Purification,2.0,Effective,2025-07-01T00:00:00Z,,Downstream purification of BTX-505 (Monoclonal antibody) from clarified CHO harvest to bulk drug substance.

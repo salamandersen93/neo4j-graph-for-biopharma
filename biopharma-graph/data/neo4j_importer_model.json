@@ -1,0 +1,5583 @@
+{
+  "version": "1.4.0-beta.0",
+  "graph": {
+    "nodes": [
+      {
+        "id": "n0",
+        "position": {
+          "x": 2000,
+          "y": 450
+        },
+        "caption": "Lab"
+      },
+      {
+        "id": "n1",
+        "position": {
+          "x": 1500,
+          "y": 900
+        },
+        "caption": "Employee"
+      },
+      {
+        "id": "n2",
+        "position": {
+          "x": 500,
+          "y": 0
+        },
+        "caption": "Product"
+      },
+      {
+        "id": "n3",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "caption": "CellBank"
+      },
+      {
+        "id": "n4",
+        "position": {
+          "x": 0,
+          "y": 450
+        },
+        "caption": "Bioreactor"
+      },
+      {
+        "id": "n5",
+        "position": {
+          "x": 500,
+          "y": 450
+        },
+        "caption": "Batch"
+      },
+      {
+        "id": "n6",
+        "position": {
+          "x": 500,
+          "y": 900
+        },
+        "caption": "PurificationProtocol"
+      },
+      {
+        "id": "n7",
+        "position": {
+          "x": 500,
+          "y": 1350
+        },
+        "caption": "PurificationStep"
+      },
+      {
+        "id": "n8",
+        "position": {
+          "x": 1000,
+          "y": 900
+        },
+        "caption": "StepExecution"
+      },
+      {
+        "id": "n9",
+        "position": {
+          "x": 0,
+          "y": 1350
+        },
+        "caption": "Material"
+      },
+      {
+        "id": "n10",
+        "position": {
+          "x": 0,
+          "y": 900
+        },
+        "caption": "MaterialLot"
+      },
+      {
+        "id": "n11",
+        "position": {
+          "x": 1000,
+          "y": 450
+        },
+        "caption": "Sample"
+      },
+      {
+        "id": "n12",
+        "position": {
+          "x": 1500,
+          "y": 0
+        },
+        "caption": "Assay"
+      },
+      {
+        "id": "n13",
+        "position": {
+          "x": 1000,
+          "y": 0
+        },
+        "caption": "Specification"
+      },
+      {
+        "id": "n14",
+        "position": {
+          "x": 2000,
+          "y": 0
+        },
+        "caption": "Instrument"
+      },
+      {
+        "id": "n15",
+        "position": {
+          "x": 1500,
+          "y": 450
+        },
+        "caption": "TestResult"
+      },
+      {
+        "id": "n16",
+        "position": {
+          "x": 2000,
+          "y": 900
+        },
+        "caption": "Deviation"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "n0",
+        "type": "WORKS_IN",
+        "fromId": "n1",
+        "toId": "n0"
+      },
+      {
+        "id": "n1",
+        "type": "LOCATED_IN",
+        "fromId": "n14",
+        "toId": "n0"
+      },
+      {
+        "id": "n2",
+        "type": "EXPRESSES",
+        "fromId": "n3",
+        "toId": "n2"
+      },
+      {
+        "id": "n3",
+        "type": "DERIVED_FROM",
+        "fromId": "n3",
+        "toId": "n3"
+      },
+      {
+        "id": "n4",
+        "type": "OF_PRODUCT",
+        "fromId": "n5",
+        "toId": "n2"
+      },
+      {
+        "id": "n5",
+        "type": "INOCULATED_FROM",
+        "fromId": "n5",
+        "toId": "n3"
+      },
+      {
+        "id": "n6",
+        "type": "PRODUCES",
+        "fromId": "n4",
+        "toId": "n5"
+      },
+      {
+        "id": "n7",
+        "type": "UNDERGOES",
+        "fromId": "n5",
+        "toId": "n6"
+      },
+      {
+        "id": "n8",
+        "type": "INCLUDES",
+        "fromId": "n6",
+        "toId": "n7"
+      },
+      {
+        "id": "n9",
+        "type": "FOLLOWED_BY",
+        "fromId": "n7",
+        "toId": "n7"
+      },
+      {
+        "id": "n10",
+        "type": "SUPERSEDES",
+        "fromId": "n6",
+        "toId": "n6"
+      },
+      {
+        "id": "n11",
+        "type": "REQUIRES",
+        "fromId": "n7",
+        "toId": "n9"
+      },
+      {
+        "id": "n12",
+        "type": "LOT_OF",
+        "fromId": "n10",
+        "toId": "n9"
+      },
+      {
+        "id": "n13",
+        "type": "CONSUMED",
+        "fromId": "n5",
+        "toId": "n10"
+      },
+      {
+        "id": "n14",
+        "type": "PART_OF",
+        "fromId": "n8",
+        "toId": "n5"
+      },
+      {
+        "id": "n15",
+        "type": "OF_STEP",
+        "fromId": "n8",
+        "toId": "n7"
+      },
+      {
+        "id": "n16",
+        "type": "EXECUTED_BY",
+        "fromId": "n8",
+        "toId": "n1"
+      },
+      {
+        "id": "n17",
+        "type": "RESPONSIBLE_FOR",
+        "fromId": "n1",
+        "toId": "n5"
+      },
+      {
+        "id": "n18",
+        "type": "TAKEN_FROM",
+        "fromId": "n11",
+        "toId": "n5"
+      },
+      {
+        "id": "n19",
+        "type": "TAKEN_AT",
+        "fromId": "n11",
+        "toId": "n8"
+      },
+      {
+        "id": "n20",
+        "type": "ON_SAMPLE",
+        "fromId": "n15",
+        "toId": "n11"
+      },
+      {
+        "id": "n21",
+        "type": "USES_METHOD",
+        "fromId": "n15",
+        "toId": "n12"
+      },
+      {
+        "id": "n22",
+        "type": "AGAINST_SPEC",
+        "fromId": "n15",
+        "toId": "n13"
+      },
+      {
+        "id": "n23",
+        "type": "CONDUCTED_IN",
+        "fromId": "n15",
+        "toId": "n0"
+      },
+      {
+        "id": "n24",
+        "type": "PERFORMED_BY",
+        "fromId": "n15",
+        "toId": "n1"
+      },
+      {
+        "id": "n25",
+        "type": "REVIEWED_BY",
+        "fromId": "n15",
+        "toId": "n1"
+      },
+      {
+        "id": "n26",
+        "type": "USED_FOR",
+        "fromId": "n14",
+        "toId": "n15"
+      },
+      {
+        "id": "n27",
+        "type": "RETEST_OF",
+        "fromId": "n15",
+        "toId": "n15"
+      },
+      {
+        "id": "n28",
+        "type": "APPLIES_TO",
+        "fromId": "n13",
+        "toId": "n2"
+      },
+      {
+        "id": "n29",
+        "type": "MEASURED_BY",
+        "fromId": "n13",
+        "toId": "n12"
+      },
+      {
+        "id": "n30",
+        "type": "AFFECTS",
+        "fromId": "n16",
+        "toId": "n5"
+      },
+      {
+        "id": "n31",
+        "type": "TRIGGERED_BY",
+        "fromId": "n16",
+        "toId": "n15"
+      },
+      {
+        "id": "n32",
+        "type": "OCCURRED_AT",
+        "fromId": "n16",
+        "toId": "n8"
+      },
+      {
+        "id": "n33",
+        "type": "OWNED_BY",
+        "fromId": "n16",
+        "toId": "n1"
+      }
+    ]
+  },
+  "dataModel": {
+    "version": "1.4.0-beta.0",
+    "graphSchemaRepresentation": {
+      "version": "1.0.0",
+      "graphSchema": {
+        "nodeLabels": [
+          {
+            "$id": "nl:n0",
+            "token": "Lab",
+            "properties": [
+              {
+                "$id": "p:1",
+                "token": "labId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:2",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:3",
+                "token": "department",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:4",
+                "token": "building",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:5",
+                "token": "gxpScope",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n1",
+            "token": "Employee",
+            "properties": [
+              {
+                "$id": "p:6",
+                "token": "employeeId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:7",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:8",
+                "token": "email",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:9",
+                "token": "role",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:10",
+                "token": "department",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n2",
+            "token": "Product",
+            "properties": [
+              {
+                "$id": "p:11",
+                "token": "productCode",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:12",
+                "token": "modality",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:13",
+                "token": "targetAntigen",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:14",
+                "token": "isotype",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:15",
+                "token": "molecularWeightKDa",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:16",
+                "token": "developmentPhase",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:17",
+                "token": "formulation",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n3",
+            "token": "CellBank",
+            "properties": [
+              {
+                "$id": "p:18",
+                "token": "bankId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:19",
+                "token": "bankType",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:20",
+                "token": "cellLine",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:21",
+                "token": "passageNumber",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:22",
+                "token": "vialCount",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:23",
+                "token": "preparedDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:24",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n4",
+            "token": "Bioreactor",
+            "properties": [
+              {
+                "$id": "p:25",
+                "token": "equipmentId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:26",
+                "token": "type",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:27",
+                "token": "manufacturer",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:28",
+                "token": "model",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:29",
+                "token": "nominalVolumeL",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:30",
+                "token": "location",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:31",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:32",
+                "token": "qualifiedDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n5",
+            "token": "Batch",
+            "properties": [
+              {
+                "$id": "p:33",
+                "token": "batchNumber",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:34",
+                "token": "gmpStatus",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:35",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:36",
+                "token": "scaleL",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:37",
+                "token": "harvestVolumeL",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:38",
+                "token": "titerGPerL",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:39",
+                "token": "drugSubstanceG",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:40",
+                "token": "overallYieldPct",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:41",
+                "token": "dispositionDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n6",
+            "token": "PurificationProtocol",
+            "properties": [
+              {
+                "$id": "p:42",
+                "token": "protocolId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:43",
+                "token": "documentNumber",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:44",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:45",
+                "token": "version",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:46",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:47",
+                "token": "effectiveDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:48",
+                "token": "supersededDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:49",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n7",
+            "token": "PurificationStep",
+            "properties": [
+              {
+                "$id": "p:50",
+                "token": "stepId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:51",
+                "token": "stepNumber",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:52",
+                "token": "stepName",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:53",
+                "token": "stepType",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:54",
+                "token": "operatingParameters",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n8",
+            "token": "StepExecution",
+            "properties": [
+              {
+                "$id": "p:55",
+                "token": "executionId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:56",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:57",
+                "token": "startTime",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:58",
+                "token": "endTime",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:59",
+                "token": "stepYieldPct",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:60",
+                "token": "poolVolumeL",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n9",
+            "token": "Material",
+            "properties": [
+              {
+                "$id": "p:61",
+                "token": "materialId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:62",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:63",
+                "token": "category",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:64",
+                "token": "supplier",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:65",
+                "token": "grade",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n10",
+            "token": "MaterialLot",
+            "properties": [
+              {
+                "$id": "p:66",
+                "token": "lotNumber",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:67",
+                "token": "supplierLotNumber",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:68",
+                "token": "receivedDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:69",
+                "token": "expiryDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:70",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              }
+            ]
+          },
+          {
+            "$id": "nl:n11",
+            "token": "Sample",
+            "properties": [
+              {
+                "$id": "p:71",
+                "token": "sampleId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:72",
+                "token": "sampleType",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:73",
+                "token": "samplePoint",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:74",
+                "token": "collectedAt",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:75",
+                "token": "volumeMl",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:76",
+                "token": "storageCondition",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n12",
+            "token": "Assay",
+            "properties": [
+              {
+                "$id": "p:77",
+                "token": "methodId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:78",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:79",
+                "token": "technique",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:80",
+                "token": "version",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:81",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:82",
+                "token": "instrumentType",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:83",
+                "token": "description",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n13",
+            "token": "Specification",
+            "properties": [
+              {
+                "$id": "p:84",
+                "token": "specId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:85",
+                "token": "attribute",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:86",
+                "token": "category",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:87",
+                "token": "stage",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:88",
+                "token": "samplePoint",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:89",
+                "token": "unit",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:90",
+                "token": "limitType",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:91",
+                "token": "lowerLimit",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:92",
+                "token": "upperLimit",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n14",
+            "token": "Instrument",
+            "properties": [
+              {
+                "$id": "p:93",
+                "token": "instrumentId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:94",
+                "token": "name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:95",
+                "token": "instrumentType",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:96",
+                "token": "manufacturer",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:97",
+                "token": "model",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:98",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:99",
+                "token": "lastCalibrated",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:100",
+                "token": "calibrationDue",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "nl:n15",
+            "token": "TestResult",
+            "properties": [
+              {
+                "$id": "p:101",
+                "token": "resultId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:102",
+                "token": "attempt",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:103",
+                "token": "qualifier",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:104",
+                "token": "value",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:105",
+                "token": "unit",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:106",
+                "token": "outcome",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:107",
+                "token": "resultStatus",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:108",
+                "token": "testedAt",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:109",
+                "token": "reviewedAt",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:110",
+                "token": "reviewStatus",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              }
+            ]
+          },
+          {
+            "$id": "nl:n16",
+            "token": "Deviation",
+            "properties": [
+              {
+                "$id": "p:111",
+                "token": "deviationId",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:112",
+                "token": "deviationType",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:113",
+                "token": "title",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:114",
+                "token": "severity",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:115",
+                "token": "status",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:116",
+                "token": "openedDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:117",
+                "token": "closedDate",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:118",
+                "token": "rootCause",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:119",
+                "token": "capaNumber",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ],
+        "relationshipTypes": [
+          {
+            "$id": "rt:n0",
+            "token": "WORKS_IN",
+            "properties": []
+          },
+          {
+            "$id": "rt:n1",
+            "token": "LOCATED_IN",
+            "properties": []
+          },
+          {
+            "$id": "rt:n2",
+            "token": "EXPRESSES",
+            "properties": []
+          },
+          {
+            "$id": "rt:n3",
+            "token": "DERIVED_FROM",
+            "properties": []
+          },
+          {
+            "$id": "rt:n4",
+            "token": "OF_PRODUCT",
+            "properties": []
+          },
+          {
+            "$id": "rt:n5",
+            "token": "INOCULATED_FROM",
+            "properties": []
+          },
+          {
+            "$id": "rt:n6",
+            "token": "PRODUCES",
+            "properties": [
+              {
+                "$id": "p:120",
+                "token": "startTime",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:121",
+                "token": "endTime",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:122",
+                "token": "workingVolumeL",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:n7",
+            "token": "UNDERGOES",
+            "properties": [
+              {
+                "$id": "p:123",
+                "token": "startTime",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:124",
+                "token": "endTime",
+                "type": {
+                  "type": "datetime"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "rt:n8",
+            "token": "INCLUDES",
+            "properties": []
+          },
+          {
+            "$id": "rt:n9",
+            "token": "FOLLOWED_BY",
+            "properties": []
+          },
+          {
+            "$id": "rt:n10",
+            "token": "SUPERSEDES",
+            "properties": []
+          },
+          {
+            "$id": "rt:n11",
+            "token": "REQUIRES",
+            "properties": []
+          },
+          {
+            "$id": "rt:n12",
+            "token": "LOT_OF",
+            "properties": []
+          },
+          {
+            "$id": "rt:n13",
+            "token": "CONSUMED",
+            "properties": [
+              {
+                "$id": "p:125",
+                "token": "quantity",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": false
+              },
+              {
+                "$id": "p:126",
+                "token": "unit",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              }
+            ]
+          },
+          {
+            "$id": "rt:n14",
+            "token": "PART_OF",
+            "properties": []
+          },
+          {
+            "$id": "rt:n15",
+            "token": "OF_STEP",
+            "properties": []
+          },
+          {
+            "$id": "rt:n16",
+            "token": "EXECUTED_BY",
+            "properties": []
+          },
+          {
+            "$id": "rt:n17",
+            "token": "RESPONSIBLE_FOR",
+            "properties": [
+              {
+                "$id": "p:127",
+                "token": "role",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": false
+              }
+            ]
+          },
+          {
+            "$id": "rt:n18",
+            "token": "TAKEN_FROM",
+            "properties": []
+          },
+          {
+            "$id": "rt:n19",
+            "token": "TAKEN_AT",
+            "properties": []
+          },
+          {
+            "$id": "rt:n20",
+            "token": "ON_SAMPLE",
+            "properties": []
+          },
+          {
+            "$id": "rt:n21",
+            "token": "USES_METHOD",
+            "properties": []
+          },
+          {
+            "$id": "rt:n22",
+            "token": "AGAINST_SPEC",
+            "properties": []
+          },
+          {
+            "$id": "rt:n23",
+            "token": "CONDUCTED_IN",
+            "properties": []
+          },
+          {
+            "$id": "rt:n24",
+            "token": "PERFORMED_BY",
+            "properties": []
+          },
+          {
+            "$id": "rt:n25",
+            "token": "REVIEWED_BY",
+            "properties": []
+          },
+          {
+            "$id": "rt:n26",
+            "token": "USED_FOR",
+            "properties": []
+          },
+          {
+            "$id": "rt:n27",
+            "token": "RETEST_OF",
+            "properties": []
+          },
+          {
+            "$id": "rt:n28",
+            "token": "APPLIES_TO",
+            "properties": []
+          },
+          {
+            "$id": "rt:n29",
+            "token": "MEASURED_BY",
+            "properties": []
+          },
+          {
+            "$id": "rt:n30",
+            "token": "AFFECTS",
+            "properties": []
+          },
+          {
+            "$id": "rt:n31",
+            "token": "TRIGGERED_BY",
+            "properties": []
+          },
+          {
+            "$id": "rt:n32",
+            "token": "OCCURRED_AT",
+            "properties": []
+          },
+          {
+            "$id": "rt:n33",
+            "token": "OWNED_BY",
+            "properties": []
+          }
+        ],
+        "nodeObjectTypes": [
+          {
+            "$id": "n:n0",
+            "labels": [
+              {
+                "$ref": "#nl:n0"
+              }
+            ]
+          },
+          {
+            "$id": "n:n1",
+            "labels": [
+              {
+                "$ref": "#nl:n1"
+              }
+            ]
+          },
+          {
+            "$id": "n:n2",
+            "labels": [
+              {
+                "$ref": "#nl:n2"
+              }
+            ]
+          },
+          {
+            "$id": "n:n3",
+            "labels": [
+              {
+                "$ref": "#nl:n3"
+              }
+            ]
+          },
+          {
+            "$id": "n:n4",
+            "labels": [
+              {
+                "$ref": "#nl:n4"
+              }
+            ]
+          },
+          {
+            "$id": "n:n5",
+            "labels": [
+              {
+                "$ref": "#nl:n5"
+              }
+            ]
+          },
+          {
+            "$id": "n:n6",
+            "labels": [
+              {
+                "$ref": "#nl:n6"
+              }
+            ]
+          },
+          {
+            "$id": "n:n7",
+            "labels": [
+              {
+                "$ref": "#nl:n7"
+              }
+            ]
+          },
+          {
+            "$id": "n:n8",
+            "labels": [
+              {
+                "$ref": "#nl:n8"
+              }
+            ]
+          },
+          {
+            "$id": "n:n9",
+            "labels": [
+              {
+                "$ref": "#nl:n9"
+              }
+            ]
+          },
+          {
+            "$id": "n:n10",
+            "labels": [
+              {
+                "$ref": "#nl:n10"
+              }
+            ]
+          },
+          {
+            "$id": "n:n11",
+            "labels": [
+              {
+                "$ref": "#nl:n11"
+              }
+            ]
+          },
+          {
+            "$id": "n:n12",
+            "labels": [
+              {
+                "$ref": "#nl:n12"
+              }
+            ]
+          },
+          {
+            "$id": "n:n13",
+            "labels": [
+              {
+                "$ref": "#nl:n13"
+              }
+            ]
+          },
+          {
+            "$id": "n:n14",
+            "labels": [
+              {
+                "$ref": "#nl:n14"
+              }
+            ]
+          },
+          {
+            "$id": "n:n15",
+            "labels": [
+              {
+                "$ref": "#nl:n15"
+              }
+            ]
+          },
+          {
+            "$id": "n:n16",
+            "labels": [
+              {
+                "$ref": "#nl:n16"
+              }
+            ]
+          }
+        ],
+        "relationshipObjectTypes": [
+          {
+            "$id": "r:n0",
+            "type": {
+              "$ref": "#rt:n0"
+            },
+            "from": {
+              "$ref": "#n:n1"
+            },
+            "to": {
+              "$ref": "#n:n0"
+            }
+          },
+          {
+            "$id": "r:n1",
+            "type": {
+              "$ref": "#rt:n1"
+            },
+            "from": {
+              "$ref": "#n:n14"
+            },
+            "to": {
+              "$ref": "#n:n0"
+            }
+          },
+          {
+            "$id": "r:n2",
+            "type": {
+              "$ref": "#rt:n2"
+            },
+            "from": {
+              "$ref": "#n:n3"
+            },
+            "to": {
+              "$ref": "#n:n2"
+            }
+          },
+          {
+            "$id": "r:n3",
+            "type": {
+              "$ref": "#rt:n3"
+            },
+            "from": {
+              "$ref": "#n:n3"
+            },
+            "to": {
+              "$ref": "#n:n3"
+            }
+          },
+          {
+            "$id": "r:n4",
+            "type": {
+              "$ref": "#rt:n4"
+            },
+            "from": {
+              "$ref": "#n:n5"
+            },
+            "to": {
+              "$ref": "#n:n2"
+            }
+          },
+          {
+            "$id": "r:n5",
+            "type": {
+              "$ref": "#rt:n5"
+            },
+            "from": {
+              "$ref": "#n:n5"
+            },
+            "to": {
+              "$ref": "#n:n3"
+            }
+          },
+          {
+            "$id": "r:n6",
+            "type": {
+              "$ref": "#rt:n6"
+            },
+            "from": {
+              "$ref": "#n:n4"
+            },
+            "to": {
+              "$ref": "#n:n5"
+            }
+          },
+          {
+            "$id": "r:n7",
+            "type": {
+              "$ref": "#rt:n7"
+            },
+            "from": {
+              "$ref": "#n:n5"
+            },
+            "to": {
+              "$ref": "#n:n6"
+            }
+          },
+          {
+            "$id": "r:n8",
+            "type": {
+              "$ref": "#rt:n8"
+            },
+            "from": {
+              "$ref": "#n:n6"
+            },
+            "to": {
+              "$ref": "#n:n7"
+            }
+          },
+          {
+            "$id": "r:n9",
+            "type": {
+              "$ref": "#rt:n9"
+            },
+            "from": {
+              "$ref": "#n:n7"
+            },
+            "to": {
+              "$ref": "#n:n7"
+            }
+          },
+          {
+            "$id": "r:n10",
+            "type": {
+              "$ref": "#rt:n10"
+            },
+            "from": {
+              "$ref": "#n:n6"
+            },
+            "to": {
+              "$ref": "#n:n6"
+            }
+          },
+          {
+            "$id": "r:n11",
+            "type": {
+              "$ref": "#rt:n11"
+            },
+            "from": {
+              "$ref": "#n:n7"
+            },
+            "to": {
+              "$ref": "#n:n9"
+            }
+          },
+          {
+            "$id": "r:n12",
+            "type": {
+              "$ref": "#rt:n12"
+            },
+            "from": {
+              "$ref": "#n:n10"
+            },
+            "to": {
+              "$ref": "#n:n9"
+            }
+          },
+          {
+            "$id": "r:n13",
+            "type": {
+              "$ref": "#rt:n13"
+            },
+            "from": {
+              "$ref": "#n:n5"
+            },
+            "to": {
+              "$ref": "#n:n10"
+            }
+          },
+          {
+            "$id": "r:n14",
+            "type": {
+              "$ref": "#rt:n14"
+            },
+            "from": {
+              "$ref": "#n:n8"
+            },
+            "to": {
+              "$ref": "#n:n5"
+            }
+          },
+          {
+            "$id": "r:n15",
+            "type": {
+              "$ref": "#rt:n15"
+            },
+            "from": {
+              "$ref": "#n:n8"
+            },
+            "to": {
+              "$ref": "#n:n7"
+            }
+          },
+          {
+            "$id": "r:n16",
+            "type": {
+              "$ref": "#rt:n16"
+            },
+            "from": {
+              "$ref": "#n:n8"
+            },
+            "to": {
+              "$ref": "#n:n1"
+            }
+          },
+          {
+            "$id": "r:n17",
+            "type": {
+              "$ref": "#rt:n17"
+            },
+            "from": {
+              "$ref": "#n:n1"
+            },
+            "to": {
+              "$ref": "#n:n5"
+            }
+          },
+          {
+            "$id": "r:n18",
+            "type": {
+              "$ref": "#rt:n18"
+            },
+            "from": {
+              "$ref": "#n:n11"
+            },
+            "to": {
+              "$ref": "#n:n5"
+            }
+          },
+          {
+            "$id": "r:n19",
+            "type": {
+              "$ref": "#rt:n19"
+            },
+            "from": {
+              "$ref": "#n:n11"
+            },
+            "to": {
+              "$ref": "#n:n8"
+            }
+          },
+          {
+            "$id": "r:n20",
+            "type": {
+              "$ref": "#rt:n20"
+            },
+            "from": {
+              "$ref": "#n:n15"
+            },
+            "to": {
+              "$ref": "#n:n11"
+            }
+          },
+          {
+            "$id": "r:n21",
+            "type": {
+              "$ref": "#rt:n21"
+            },
+            "from": {
+              "$ref": "#n:n15"
+            },
+            "to": {
+              "$ref": "#n:n12"
+            }
+          },
+          {
+            "$id": "r:n22",
+            "type": {
+              "$ref": "#rt:n22"
+            },
+            "from": {
+              "$ref": "#n:n15"
+            },
+            "to": {
+              "$ref": "#n:n13"
+            }
+          },
+          {
+            "$id": "r:n23",
+            "type": {
+              "$ref": "#rt:n23"
+            },
+            "from": {
+              "$ref": "#n:n15"
+            },
+            "to": {
+              "$ref": "#n:n0"
+            }
+          },
+          {
+            "$id": "r:n24",
+            "type": {
+              "$ref": "#rt:n24"
+            },
+            "from": {
+              "$ref": "#n:n15"
+            },
+            "to": {
+              "$ref": "#n:n1"
+            }
+          },
+          {
+            "$id": "r:n25",
+            "type": {
+              "$ref": "#rt:n25"
+            },
+            "from": {
+              "$ref": "#n:n15"
+            },
+            "to": {
+              "$ref": "#n:n1"
+            }
+          },
+          {
+            "$id": "r:n26",
+            "type": {
+              "$ref": "#rt:n26"
+            },
+            "from": {
+              "$ref": "#n:n14"
+            },
+            "to": {
+              "$ref": "#n:n15"
+            }
+          },
+          {
+            "$id": "r:n27",
+            "type": {
+              "$ref": "#rt:n27"
+            },
+            "from": {
+              "$ref": "#n:n15"
+            },
+            "to": {
+              "$ref": "#n:n15"
+            }
+          },
+          {
+            "$id": "r:n28",
+            "type": {
+              "$ref": "#rt:n28"
+            },
+            "from": {
+              "$ref": "#n:n13"
+            },
+            "to": {
+              "$ref": "#n:n2"
+            }
+          },
+          {
+            "$id": "r:n29",
+            "type": {
+              "$ref": "#rt:n29"
+            },
+            "from": {
+              "$ref": "#n:n13"
+            },
+            "to": {
+              "$ref": "#n:n12"
+            }
+          },
+          {
+            "$id": "r:n30",
+            "type": {
+              "$ref": "#rt:n30"
+            },
+            "from": {
+              "$ref": "#n:n16"
+            },
+            "to": {
+              "$ref": "#n:n5"
+            }
+          },
+          {
+            "$id": "r:n31",
+            "type": {
+              "$ref": "#rt:n31"
+            },
+            "from": {
+              "$ref": "#n:n16"
+            },
+            "to": {
+              "$ref": "#n:n15"
+            }
+          },
+          {
+            "$id": "r:n32",
+            "type": {
+              "$ref": "#rt:n32"
+            },
+            "from": {
+              "$ref": "#n:n16"
+            },
+            "to": {
+              "$ref": "#n:n8"
+            }
+          },
+          {
+            "$id": "r:n33",
+            "type": {
+              "$ref": "#rt:n33"
+            },
+            "from": {
+              "$ref": "#n:n16"
+            },
+            "to": {
+              "$ref": "#n:n1"
+            }
+          }
+        ],
+        "constraints": [
+          {
+            "$id": "c:1",
+            "name": "Lab_labId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n0"
+            },
+            "properties": [
+              {
+                "$ref": "#p:1"
+              }
+            ]
+          },
+          {
+            "$id": "c:2",
+            "name": "Employee_employeeId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n1"
+            },
+            "properties": [
+              {
+                "$ref": "#p:6"
+              }
+            ]
+          },
+          {
+            "$id": "c:3",
+            "name": "Employee_email_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n1"
+            },
+            "properties": [
+              {
+                "$ref": "#p:8"
+              }
+            ]
+          },
+          {
+            "$id": "c:4",
+            "name": "Product_productCode_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n2"
+            },
+            "properties": [
+              {
+                "$ref": "#p:11"
+              }
+            ]
+          },
+          {
+            "$id": "c:5",
+            "name": "CellBank_bankId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n3"
+            },
+            "properties": [
+              {
+                "$ref": "#p:18"
+              }
+            ]
+          },
+          {
+            "$id": "c:6",
+            "name": "Bioreactor_equipmentId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n4"
+            },
+            "properties": [
+              {
+                "$ref": "#p:25"
+              }
+            ]
+          },
+          {
+            "$id": "c:7",
+            "name": "Batch_batchNumber_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n5"
+            },
+            "properties": [
+              {
+                "$ref": "#p:33"
+              }
+            ]
+          },
+          {
+            "$id": "c:8",
+            "name": "PurificationProtocol_protocolId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n6"
+            },
+            "properties": [
+              {
+                "$ref": "#p:42"
+              }
+            ]
+          },
+          {
+            "$id": "c:9",
+            "name": "PurificationStep_stepId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n7"
+            },
+            "properties": [
+              {
+                "$ref": "#p:50"
+              }
+            ]
+          },
+          {
+            "$id": "c:10",
+            "name": "StepExecution_executionId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n8"
+            },
+            "properties": [
+              {
+                "$ref": "#p:55"
+              }
+            ]
+          },
+          {
+            "$id": "c:11",
+            "name": "Material_materialId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n9"
+            },
+            "properties": [
+              {
+                "$ref": "#p:61"
+              }
+            ]
+          },
+          {
+            "$id": "c:12",
+            "name": "MaterialLot_lotNumber_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n10"
+            },
+            "properties": [
+              {
+                "$ref": "#p:66"
+              }
+            ]
+          },
+          {
+            "$id": "c:13",
+            "name": "Sample_sampleId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n11"
+            },
+            "properties": [
+              {
+                "$ref": "#p:71"
+              }
+            ]
+          },
+          {
+            "$id": "c:14",
+            "name": "Assay_methodId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n12"
+            },
+            "properties": [
+              {
+                "$ref": "#p:77"
+              }
+            ]
+          },
+          {
+            "$id": "c:15",
+            "name": "Specification_specId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n13"
+            },
+            "properties": [
+              {
+                "$ref": "#p:84"
+              }
+            ]
+          },
+          {
+            "$id": "c:16",
+            "name": "Instrument_instrumentId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n14"
+            },
+            "properties": [
+              {
+                "$ref": "#p:93"
+              }
+            ]
+          },
+          {
+            "$id": "c:17",
+            "name": "TestResult_resultId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n15"
+            },
+            "properties": [
+              {
+                "$ref": "#p:101"
+              }
+            ]
+          },
+          {
+            "$id": "c:18",
+            "name": "Deviation_deviationId_unique",
+            "constraintType": "uniqueness",
+            "entityType": "node",
+            "nodeLabel": {
+              "$ref": "#nl:n16"
+            },
+            "properties": [
+              {
+                "$ref": "#p:111"
+              }
+            ]
+          }
+        ],
+        "indexes": []
+      }
+    },
+    "graphSchemaExtensionsRepresentation": {
+      "nodeKeyProperties": [
+        {
+          "node": {
+            "$ref": "#n:n0"
+          },
+          "keyProperty": {
+            "$ref": "#p:1"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n1"
+          },
+          "keyProperty": {
+            "$ref": "#p:6"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n2"
+          },
+          "keyProperty": {
+            "$ref": "#p:11"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n3"
+          },
+          "keyProperty": {
+            "$ref": "#p:18"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n4"
+          },
+          "keyProperty": {
+            "$ref": "#p:25"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n5"
+          },
+          "keyProperty": {
+            "$ref": "#p:33"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n6"
+          },
+          "keyProperty": {
+            "$ref": "#p:42"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n7"
+          },
+          "keyProperty": {
+            "$ref": "#p:50"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n8"
+          },
+          "keyProperty": {
+            "$ref": "#p:55"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n9"
+          },
+          "keyProperty": {
+            "$ref": "#p:61"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n10"
+          },
+          "keyProperty": {
+            "$ref": "#p:66"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n11"
+          },
+          "keyProperty": {
+            "$ref": "#p:71"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n12"
+          },
+          "keyProperty": {
+            "$ref": "#p:77"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n13"
+          },
+          "keyProperty": {
+            "$ref": "#p:84"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n14"
+          },
+          "keyProperty": {
+            "$ref": "#p:93"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n15"
+          },
+          "keyProperty": {
+            "$ref": "#p:101"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n16"
+          },
+          "keyProperty": {
+            "$ref": "#p:111"
+          }
+        }
+      ]
+    },
+    "graphMappingRepresentation": {
+      "dataSourceSchema": {
+        "type": "local/csv",
+        "tableSchemas": [
+          {
+            "$id": "t:1",
+            "name": "labs.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "labId",
+                "type": "string",
+                "sample": "QC-BIOCHEM",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "QC Biochemistry",
+                "include": true
+              },
+              {
+                "name": "department",
+                "type": "string",
+                "sample": "QC",
+                "include": true
+              },
+              {
+                "name": "building",
+                "type": "string",
+                "sample": "Bldg 2 Rm 210",
+                "include": true
+              },
+              {
+                "name": "gxpScope",
+                "type": "string",
+                "sample": "GMP QC",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:2",
+            "name": "employees.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "employeeId",
+                "type": "string",
+                "sample": "E1001",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "Claire Alvarez",
+                "include": true
+              },
+              {
+                "name": "email",
+                "type": "string",
+                "sample": "claire.alvarez@meridianbio.example",
+                "include": true
+              },
+              {
+                "name": "role",
+                "type": "string",
+                "sample": "Upstream Operator",
+                "include": true
+              },
+              {
+                "name": "department",
+                "type": "string",
+                "sample": "Upstream Manufacturing",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:3",
+            "name": "products.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "productCode",
+                "type": "string",
+                "sample": "BTX-101",
+                "include": true
+              },
+              {
+                "name": "modality",
+                "type": "string",
+                "sample": "Monoclonal antibody",
+                "include": true
+              },
+              {
+                "name": "targetAntigen",
+                "type": "string",
+                "sample": "IL-23 p19",
+                "include": true
+              },
+              {
+                "name": "isotype",
+                "type": "string",
+                "sample": "IgG1",
+                "include": true
+              },
+              {
+                "name": "molecularWeightKDa",
+                "type": "float",
+                "sample": "148.5",
+                "include": true
+              },
+              {
+                "name": "developmentPhase",
+                "type": "string",
+                "sample": "Phase 3",
+                "include": true
+              },
+              {
+                "name": "formulation",
+                "type": "string",
+                "sample": "20 mM histidine, 8% sucrose, 0.04% polysorbate 80, pH 5.8",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:4",
+            "name": "cell_banks.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "bankId",
+                "type": "string",
+                "sample": "MCB-BTX101",
+                "include": true
+              },
+              {
+                "name": "bankType",
+                "type": "string",
+                "sample": "MCB",
+                "include": true
+              },
+              {
+                "name": "cellLine",
+                "type": "string",
+                "sample": "CHO-K1 GS-KO",
+                "include": true
+              },
+              {
+                "name": "passageNumber",
+                "type": "integer",
+                "sample": "12",
+                "include": true
+              },
+              {
+                "name": "vialCount",
+                "type": "integer",
+                "sample": "231",
+                "include": true
+              },
+              {
+                "name": "preparedDate",
+                "type": "datetime",
+                "sample": "2022-11-25T00:00:00Z",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "Active",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:5",
+            "name": "bioreactors.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "equipmentId",
+                "type": "string",
+                "sample": "BR-050-01",
+                "include": true
+              },
+              {
+                "name": "type",
+                "type": "string",
+                "sample": "Single-use stirred tank",
+                "include": true
+              },
+              {
+                "name": "manufacturer",
+                "type": "string",
+                "sample": "Sartorius",
+                "include": true
+              },
+              {
+                "name": "model",
+                "type": "string",
+                "sample": "Biostat STR 50",
+                "include": true
+              },
+              {
+                "name": "nominalVolumeL",
+                "type": "integer",
+                "sample": "50",
+                "include": true
+              },
+              {
+                "name": "location",
+                "type": "string",
+                "sample": "PD Suite A",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "Qualified",
+                "include": true
+              },
+              {
+                "name": "qualifiedDate",
+                "type": "datetime",
+                "sample": "2023-06-13T00:00:00Z",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:6",
+            "name": "batches.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              },
+              {
+                "name": "gmpStatus",
+                "type": "string",
+                "sample": "GMP",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "Released",
+                "include": true
+              },
+              {
+                "name": "scaleL",
+                "type": "integer",
+                "sample": "2000",
+                "include": true
+              },
+              {
+                "name": "harvestVolumeL",
+                "type": "float",
+                "sample": "1493.6",
+                "include": true
+              },
+              {
+                "name": "titerGPerL",
+                "type": "float",
+                "sample": "5.0",
+                "include": true
+              },
+              {
+                "name": "drugSubstanceG",
+                "type": "float",
+                "sample": "5354.6",
+                "include": true
+              },
+              {
+                "name": "overallYieldPct",
+                "type": "float",
+                "sample": "71.7",
+                "include": true
+              },
+              {
+                "name": "dispositionDate",
+                "type": "datetime",
+                "sample": "2024-09-02T00:00:00Z",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:7",
+            "name": "purification_protocols.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "protocolId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0",
+                "include": true
+              },
+              {
+                "name": "documentNumber",
+                "type": "string",
+                "sample": "SOP-DSP-0101",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "BTX-101 Drug Substance Purification",
+                "include": true
+              },
+              {
+                "name": "version",
+                "type": "string",
+                "sample": "1.0",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "Superseded",
+                "include": true
+              },
+              {
+                "name": "effectiveDate",
+                "type": "datetime",
+                "sample": "2023-11-01T00:00:00Z",
+                "include": true
+              },
+              {
+                "name": "supersededDate",
+                "type": "datetime",
+                "sample": "2025-07-01T00:00:00Z",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "Downstream purification of BTX-101 (Monoclonal antibody) from clarified CHO harvest to bulk drug substance.",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:8",
+            "name": "purification_steps.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "stepId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0-S01",
+                "include": true
+              },
+              {
+                "name": "stepNumber",
+                "type": "integer",
+                "sample": "1",
+                "include": true
+              },
+              {
+                "name": "stepName",
+                "type": "string",
+                "sample": "Harvest Clarification",
+                "include": true
+              },
+              {
+                "name": "stepType",
+                "type": "string",
+                "sample": "Filtration",
+                "include": true
+              },
+              {
+                "name": "operatingParameters",
+                "type": "string",
+                "sample": "Depth filtration then 0.2 um; flux <= 100 LMH",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:9",
+            "name": "step_executions.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "executionId",
+                "type": "string",
+                "sample": "BTX101-24-001-S01",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "Completed",
+                "include": true
+              },
+              {
+                "name": "startTime",
+                "type": "datetime",
+                "sample": "2024-08-05T14:13:00Z",
+                "include": true
+              },
+              {
+                "name": "endTime",
+                "type": "datetime",
+                "sample": "2024-08-06T02:46:40Z",
+                "include": true
+              },
+              {
+                "name": "stepYieldPct",
+                "type": "float",
+                "sample": "98.0",
+                "include": true
+              },
+              {
+                "name": "poolVolumeL",
+                "type": "float",
+                "sample": "1463.7",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:10",
+            "name": "materials.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "materialId",
+                "type": "string",
+                "sample": "MAT-001",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "CHO Production Basal Medium",
+                "include": true
+              },
+              {
+                "name": "category",
+                "type": "string",
+                "sample": "Media",
+                "include": true
+              },
+              {
+                "name": "supplier",
+                "type": "string",
+                "sample": "Thermo Fisher Scientific",
+                "include": true
+              },
+              {
+                "name": "grade",
+                "type": "string",
+                "sample": "cGMP",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:11",
+            "name": "material_lots.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "lotNumber",
+                "type": "string",
+                "sample": "L23-001-001",
+                "include": true
+              },
+              {
+                "name": "supplierLotNumber",
+                "type": "string",
+                "sample": "A4291572",
+                "include": true
+              },
+              {
+                "name": "receivedDate",
+                "type": "datetime",
+                "sample": "2023-10-31T00:00:00Z",
+                "include": true
+              },
+              {
+                "name": "expiryDate",
+                "type": "datetime",
+                "sample": "2024-12-14T00:00:00Z",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "Approved",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:12",
+            "name": "samples.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "sampleId",
+                "type": "string",
+                "sample": "S-BTX101-24-001-01",
+                "include": true
+              },
+              {
+                "name": "sampleType",
+                "type": "string",
+                "sample": "In-Process",
+                "include": true
+              },
+              {
+                "name": "samplePoint",
+                "type": "string",
+                "sample": "Harvest (clarified)",
+                "include": true
+              },
+              {
+                "name": "collectedAt",
+                "type": "datetime",
+                "sample": "2024-08-06T02:46:40Z",
+                "include": true
+              },
+              {
+                "name": "volumeMl",
+                "type": "float",
+                "sample": "13.0",
+                "include": true
+              },
+              {
+                "name": "storageCondition",
+                "type": "string",
+                "sample": "2-8C",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:13",
+            "name": "assays.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "methodId",
+                "type": "string",
+                "sample": "AM-TITER-001",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "Titer by Protein A HPLC",
+                "include": true
+              },
+              {
+                "name": "technique",
+                "type": "string",
+                "sample": "HPLC",
+                "include": true
+              },
+              {
+                "name": "version",
+                "type": "string",
+                "sample": "2.0",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "Validated",
+                "include": true
+              },
+              {
+                "name": "instrumentType",
+                "type": "string",
+                "sample": "HPLC",
+                "include": true
+              },
+              {
+                "name": "description",
+                "type": "string",
+                "sample": "Titer by Protein A HPLC. Validated per ICH Q2(R2); executed under GMP controls.",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:14",
+            "name": "specifications.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "specId",
+                "type": "string",
+                "sample": "SPEC-BTX101-TITER-H",
+                "include": true
+              },
+              {
+                "name": "attribute",
+                "type": "string",
+                "sample": "Titer",
+                "include": true
+              },
+              {
+                "name": "category",
+                "type": "string",
+                "sample": "Productivity",
+                "include": true
+              },
+              {
+                "name": "stage",
+                "type": "string",
+                "sample": "In-Process",
+                "include": true
+              },
+              {
+                "name": "samplePoint",
+                "type": "string",
+                "sample": "Harvest (clarified)",
+                "include": true
+              },
+              {
+                "name": "unit",
+                "type": "string",
+                "sample": "g/L",
+                "include": true
+              },
+              {
+                "name": "limitType",
+                "type": "string",
+                "sample": "Report",
+                "include": true
+              },
+              {
+                "name": "lowerLimit",
+                "type": "float",
+                "sample": "88.0",
+                "include": true
+              },
+              {
+                "name": "upperLimit",
+                "type": "float",
+                "sample": "10.0",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:15",
+            "name": "instruments.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "instrumentId",
+                "type": "string",
+                "sample": "INS-AD-ANALYTIC-PR-01",
+                "include": true
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "sample": "Plate Reader 1",
+                "include": true
+              },
+              {
+                "name": "instrumentType",
+                "type": "string",
+                "sample": "Plate Reader",
+                "include": true
+              },
+              {
+                "name": "manufacturer",
+                "type": "string",
+                "sample": "Agilent BioTek",
+                "include": true
+              },
+              {
+                "name": "model",
+                "type": "string",
+                "sample": "Synergy H1",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "In Service",
+                "include": true
+              },
+              {
+                "name": "lastCalibrated",
+                "type": "datetime",
+                "sample": "2026-06-12T00:00:00Z",
+                "include": true
+              },
+              {
+                "name": "calibrationDue",
+                "type": "datetime",
+                "sample": "2026-12-09T00:00:00Z",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:16",
+            "name": "test_results.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000001",
+                "include": true
+              },
+              {
+                "name": "attempt",
+                "type": "integer",
+                "sample": "1",
+                "include": true
+              },
+              {
+                "name": "qualifier",
+                "type": "string",
+                "sample": "=",
+                "include": true
+              },
+              {
+                "name": "value",
+                "type": "float",
+                "sample": "5.33",
+                "include": true
+              },
+              {
+                "name": "unit",
+                "type": "string",
+                "sample": "g/L",
+                "include": true
+              },
+              {
+                "name": "outcome",
+                "type": "string",
+                "sample": "Reported",
+                "include": true
+              },
+              {
+                "name": "resultStatus",
+                "type": "string",
+                "sample": "Valid",
+                "include": true
+              },
+              {
+                "name": "testedAt",
+                "type": "datetime",
+                "sample": "2024-08-06T12:24:32Z",
+                "include": true
+              },
+              {
+                "name": "reviewedAt",
+                "type": "datetime",
+                "sample": "2024-08-07T20:39:31Z",
+                "include": true
+              },
+              {
+                "name": "reviewStatus",
+                "type": "string",
+                "sample": "Reviewed",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:17",
+            "name": "deviations.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "deviationId",
+                "type": "string",
+                "sample": "DEV-24-001",
+                "include": true
+              },
+              {
+                "name": "deviationType",
+                "type": "string",
+                "sample": "Process Deviation",
+                "include": true
+              },
+              {
+                "name": "title",
+                "type": "string",
+                "sample": "Low pH hold exceeded 60 min limit by 12 min",
+                "include": true
+              },
+              {
+                "name": "severity",
+                "type": "string",
+                "sample": "Major",
+                "include": true
+              },
+              {
+                "name": "status",
+                "type": "string",
+                "sample": "Closed",
+                "include": true
+              },
+              {
+                "name": "openedDate",
+                "type": "datetime",
+                "sample": "2024-08-08T00:00:00Z",
+                "include": true
+              },
+              {
+                "name": "closedDate",
+                "type": "datetime",
+                "sample": "2024-08-26T00:00:00Z",
+                "include": true
+              },
+              {
+                "name": "rootCause",
+                "type": "string",
+                "sample": "Delayed neutralization; viral clearance impact assessment concluded no impact",
+                "include": true
+              },
+              {
+                "name": "capaNumber",
+                "type": "string",
+                "sample": "CAPA-24-20",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:18",
+            "name": "works_in.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "employeeId",
+                "type": "string",
+                "sample": "E1015",
+                "include": true
+              },
+              {
+                "name": "labId",
+                "type": "string",
+                "sample": "QC-BIOCHEM",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:19",
+            "name": "located_in.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "instrumentId",
+                "type": "string",
+                "sample": "INS-AD-ANALYTIC-PR-01",
+                "include": true
+              },
+              {
+                "name": "labId",
+                "type": "string",
+                "sample": "AD-ANALYTIC",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:20",
+            "name": "expresses.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "bankId",
+                "type": "string",
+                "sample": "MCB-BTX101",
+                "include": true
+              },
+              {
+                "name": "productCode",
+                "type": "string",
+                "sample": "BTX-101",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:21",
+            "name": "derived_from.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "bankId",
+                "type": "string",
+                "sample": "WCB-BTX101-01",
+                "include": true
+              },
+              {
+                "name": "parentBankId",
+                "type": "string",
+                "sample": "MCB-BTX101",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:22",
+            "name": "of_product.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              },
+              {
+                "name": "productCode",
+                "type": "string",
+                "sample": "BTX-101",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:23",
+            "name": "inoculated_from.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              },
+              {
+                "name": "bankId",
+                "type": "string",
+                "sample": "WCB-BTX101-01",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:24",
+            "name": "produces.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "equipmentId",
+                "type": "string",
+                "sample": "BR-2000-01",
+                "include": true
+              },
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              },
+              {
+                "name": "startTime",
+                "type": "datetime",
+                "sample": "2024-07-21T10:13:00Z",
+                "include": true
+              },
+              {
+                "name": "endTime",
+                "type": "datetime",
+                "sample": "2024-08-05T10:13:00Z",
+                "include": true
+              },
+              {
+                "name": "workingVolumeL",
+                "type": "float",
+                "sample": "1600.0",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:25",
+            "name": "undergoes.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              },
+              {
+                "name": "protocolId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0",
+                "include": true
+              },
+              {
+                "name": "startTime",
+                "type": "datetime",
+                "sample": "2024-08-05T14:13:00Z",
+                "include": true
+              },
+              {
+                "name": "endTime",
+                "type": "datetime",
+                "sample": "2024-08-16T12:47:21Z",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:26",
+            "name": "includes.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "protocolId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0",
+                "include": true
+              },
+              {
+                "name": "stepId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0-S01",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:27",
+            "name": "followed_by.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "stepId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0-S01",
+                "include": true
+              },
+              {
+                "name": "nextStepId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0-S02",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:28",
+            "name": "supersedes.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "protocolId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v2.0",
+                "include": true
+              },
+              {
+                "name": "supersededProtocolId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:29",
+            "name": "requires.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "stepId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0-S01",
+                "include": true
+              },
+              {
+                "name": "materialId",
+                "type": "string",
+                "sample": "MAT-010",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:30",
+            "name": "lot_of.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "lotNumber",
+                "type": "string",
+                "sample": "L23-001-001",
+                "include": true
+              },
+              {
+                "name": "materialId",
+                "type": "string",
+                "sample": "MAT-001",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:31",
+            "name": "consumed.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              },
+              {
+                "name": "lotNumber",
+                "type": "string",
+                "sample": "L24-001-002",
+                "include": true
+              },
+              {
+                "name": "quantity",
+                "type": "float",
+                "sample": "1200.0",
+                "include": true
+              },
+              {
+                "name": "unit",
+                "type": "string",
+                "sample": "L",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:32",
+            "name": "part_of.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "executionId",
+                "type": "string",
+                "sample": "BTX101-24-001-S01",
+                "include": true
+              },
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:33",
+            "name": "of_step.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "executionId",
+                "type": "string",
+                "sample": "BTX101-24-001-S01",
+                "include": true
+              },
+              {
+                "name": "stepId",
+                "type": "string",
+                "sample": "SOP-DSP-0101-v1.0-S01",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:34",
+            "name": "executed_by.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "executionId",
+                "type": "string",
+                "sample": "BTX101-24-001-S01",
+                "include": true
+              },
+              {
+                "name": "employeeId",
+                "type": "string",
+                "sample": "E1008",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:35",
+            "name": "responsible_for.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "employeeId",
+                "type": "string",
+                "sample": "E1003",
+                "include": true
+              },
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              },
+              {
+                "name": "role",
+                "type": "string",
+                "sample": "Upstream Lead",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:36",
+            "name": "taken_from.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "sampleId",
+                "type": "string",
+                "sample": "S-BTX101-24-001-01",
+                "include": true
+              },
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:37",
+            "name": "taken_at.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "sampleId",
+                "type": "string",
+                "sample": "S-BTX101-24-001-01",
+                "include": true
+              },
+              {
+                "name": "executionId",
+                "type": "string",
+                "sample": "BTX101-24-001-S01",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:38",
+            "name": "on_sample.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000001",
+                "include": true
+              },
+              {
+                "name": "sampleId",
+                "type": "string",
+                "sample": "S-BTX101-24-001-01",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:39",
+            "name": "uses_method.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000001",
+                "include": true
+              },
+              {
+                "name": "methodId",
+                "type": "string",
+                "sample": "AM-TITER-001",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:40",
+            "name": "against_spec.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000001",
+                "include": true
+              },
+              {
+                "name": "specId",
+                "type": "string",
+                "sample": "SPEC-BTX101-TITER-H",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:41",
+            "name": "conducted_in.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000001",
+                "include": true
+              },
+              {
+                "name": "labId",
+                "type": "string",
+                "sample": "QC-BIOCHEM",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:42",
+            "name": "performed_by.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000001",
+                "include": true
+              },
+              {
+                "name": "employeeId",
+                "type": "string",
+                "sample": "E1016",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:43",
+            "name": "reviewed_by.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000001",
+                "include": true
+              },
+              {
+                "name": "employeeId",
+                "type": "string",
+                "sample": "E1020",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:44",
+            "name": "used_for.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "instrumentId",
+                "type": "string",
+                "sample": "INS-QC-BIOCHEM-HPLC-02",
+                "include": true
+              },
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000001",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:45",
+            "name": "retest_of.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000077",
+                "include": true
+              },
+              {
+                "name": "originalResultId",
+                "type": "string",
+                "sample": "R-000072",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:46",
+            "name": "applies_to.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "specId",
+                "type": "string",
+                "sample": "SPEC-BTX101-TITER-H",
+                "include": true
+              },
+              {
+                "name": "productCode",
+                "type": "string",
+                "sample": "BTX-101",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:47",
+            "name": "measured_by.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "specId",
+                "type": "string",
+                "sample": "SPEC-BTX101-TITER-H",
+                "include": true
+              },
+              {
+                "name": "methodId",
+                "type": "string",
+                "sample": "AM-TITER-001",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:48",
+            "name": "affects.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "deviationId",
+                "type": "string",
+                "sample": "DEV-24-001",
+                "include": true
+              },
+              {
+                "name": "batchNumber",
+                "type": "string",
+                "sample": "BTX101-24-001",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:49",
+            "name": "triggered_by.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "deviationId",
+                "type": "string",
+                "sample": "DEV-25-001",
+                "include": true
+              },
+              {
+                "name": "resultId",
+                "type": "string",
+                "sample": "R-000072",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:50",
+            "name": "occurred_at.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "deviationId",
+                "type": "string",
+                "sample": "DEV-24-001",
+                "include": true
+              },
+              {
+                "name": "executionId",
+                "type": "string",
+                "sample": "BTX101-24-001-S03",
+                "include": true
+              }
+            ]
+          },
+          {
+            "$id": "t:51",
+            "name": "owned_by.csv",
+            "expanded": true,
+            "fields": [
+              {
+                "name": "deviationId",
+                "type": "string",
+                "sample": "DEV-24-001",
+                "include": true
+              },
+              {
+                "name": "employeeId",
+                "type": "string",
+                "sample": "E1014",
+                "include": true
+              }
+            ]
+          }
+        ]
+      },
+      "nodeMappings": [
+        {
+          "node": {
+            "$ref": "#n:n0"
+          },
+          "tableSchema": {
+            "$ref": "#t:1"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "labId",
+              "property": {
+                "$ref": "#p:1"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:2"
+              }
+            },
+            {
+              "fieldName": "department",
+              "property": {
+                "$ref": "#p:3"
+              }
+            },
+            {
+              "fieldName": "building",
+              "property": {
+                "$ref": "#p:4"
+              }
+            },
+            {
+              "fieldName": "gxpScope",
+              "property": {
+                "$ref": "#p:5"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n1"
+          },
+          "tableSchema": {
+            "$ref": "#t:2"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "employeeId",
+              "property": {
+                "$ref": "#p:6"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:7"
+              }
+            },
+            {
+              "fieldName": "email",
+              "property": {
+                "$ref": "#p:8"
+              }
+            },
+            {
+              "fieldName": "role",
+              "property": {
+                "$ref": "#p:9"
+              }
+            },
+            {
+              "fieldName": "department",
+              "property": {
+                "$ref": "#p:10"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n2"
+          },
+          "tableSchema": {
+            "$ref": "#t:3"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "productCode",
+              "property": {
+                "$ref": "#p:11"
+              }
+            },
+            {
+              "fieldName": "modality",
+              "property": {
+                "$ref": "#p:12"
+              }
+            },
+            {
+              "fieldName": "targetAntigen",
+              "property": {
+                "$ref": "#p:13"
+              }
+            },
+            {
+              "fieldName": "isotype",
+              "property": {
+                "$ref": "#p:14"
+              }
+            },
+            {
+              "fieldName": "molecularWeightKDa",
+              "property": {
+                "$ref": "#p:15"
+              }
+            },
+            {
+              "fieldName": "developmentPhase",
+              "property": {
+                "$ref": "#p:16"
+              }
+            },
+            {
+              "fieldName": "formulation",
+              "property": {
+                "$ref": "#p:17"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n3"
+          },
+          "tableSchema": {
+            "$ref": "#t:4"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "bankId",
+              "property": {
+                "$ref": "#p:18"
+              }
+            },
+            {
+              "fieldName": "bankType",
+              "property": {
+                "$ref": "#p:19"
+              }
+            },
+            {
+              "fieldName": "cellLine",
+              "property": {
+                "$ref": "#p:20"
+              }
+            },
+            {
+              "fieldName": "passageNumber",
+              "property": {
+                "$ref": "#p:21"
+              }
+            },
+            {
+              "fieldName": "vialCount",
+              "property": {
+                "$ref": "#p:22"
+              }
+            },
+            {
+              "fieldName": "preparedDate",
+              "property": {
+                "$ref": "#p:23"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:24"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n4"
+          },
+          "tableSchema": {
+            "$ref": "#t:5"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "equipmentId",
+              "property": {
+                "$ref": "#p:25"
+              }
+            },
+            {
+              "fieldName": "type",
+              "property": {
+                "$ref": "#p:26"
+              }
+            },
+            {
+              "fieldName": "manufacturer",
+              "property": {
+                "$ref": "#p:27"
+              }
+            },
+            {
+              "fieldName": "model",
+              "property": {
+                "$ref": "#p:28"
+              }
+            },
+            {
+              "fieldName": "nominalVolumeL",
+              "property": {
+                "$ref": "#p:29"
+              }
+            },
+            {
+              "fieldName": "location",
+              "property": {
+                "$ref": "#p:30"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:31"
+              }
+            },
+            {
+              "fieldName": "qualifiedDate",
+              "property": {
+                "$ref": "#p:32"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n5"
+          },
+          "tableSchema": {
+            "$ref": "#t:6"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "batchNumber",
+              "property": {
+                "$ref": "#p:33"
+              }
+            },
+            {
+              "fieldName": "gmpStatus",
+              "property": {
+                "$ref": "#p:34"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:35"
+              }
+            },
+            {
+              "fieldName": "scaleL",
+              "property": {
+                "$ref": "#p:36"
+              }
+            },
+            {
+              "fieldName": "harvestVolumeL",
+              "property": {
+                "$ref": "#p:37"
+              }
+            },
+            {
+              "fieldName": "titerGPerL",
+              "property": {
+                "$ref": "#p:38"
+              }
+            },
+            {
+              "fieldName": "drugSubstanceG",
+              "property": {
+                "$ref": "#p:39"
+              }
+            },
+            {
+              "fieldName": "overallYieldPct",
+              "property": {
+                "$ref": "#p:40"
+              }
+            },
+            {
+              "fieldName": "dispositionDate",
+              "property": {
+                "$ref": "#p:41"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n6"
+          },
+          "tableSchema": {
+            "$ref": "#t:7"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "protocolId",
+              "property": {
+                "$ref": "#p:42"
+              }
+            },
+            {
+              "fieldName": "documentNumber",
+              "property": {
+                "$ref": "#p:43"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:44"
+              }
+            },
+            {
+              "fieldName": "version",
+              "property": {
+                "$ref": "#p:45"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:46"
+              }
+            },
+            {
+              "fieldName": "effectiveDate",
+              "property": {
+                "$ref": "#p:47"
+              }
+            },
+            {
+              "fieldName": "supersededDate",
+              "property": {
+                "$ref": "#p:48"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:49"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n7"
+          },
+          "tableSchema": {
+            "$ref": "#t:8"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "stepId",
+              "property": {
+                "$ref": "#p:50"
+              }
+            },
+            {
+              "fieldName": "stepNumber",
+              "property": {
+                "$ref": "#p:51"
+              }
+            },
+            {
+              "fieldName": "stepName",
+              "property": {
+                "$ref": "#p:52"
+              }
+            },
+            {
+              "fieldName": "stepType",
+              "property": {
+                "$ref": "#p:53"
+              }
+            },
+            {
+              "fieldName": "operatingParameters",
+              "property": {
+                "$ref": "#p:54"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n8"
+          },
+          "tableSchema": {
+            "$ref": "#t:9"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "executionId",
+              "property": {
+                "$ref": "#p:55"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:56"
+              }
+            },
+            {
+              "fieldName": "startTime",
+              "property": {
+                "$ref": "#p:57"
+              }
+            },
+            {
+              "fieldName": "endTime",
+              "property": {
+                "$ref": "#p:58"
+              }
+            },
+            {
+              "fieldName": "stepYieldPct",
+              "property": {
+                "$ref": "#p:59"
+              }
+            },
+            {
+              "fieldName": "poolVolumeL",
+              "property": {
+                "$ref": "#p:60"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n9"
+          },
+          "tableSchema": {
+            "$ref": "#t:10"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "materialId",
+              "property": {
+                "$ref": "#p:61"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:62"
+              }
+            },
+            {
+              "fieldName": "category",
+              "property": {
+                "$ref": "#p:63"
+              }
+            },
+            {
+              "fieldName": "supplier",
+              "property": {
+                "$ref": "#p:64"
+              }
+            },
+            {
+              "fieldName": "grade",
+              "property": {
+                "$ref": "#p:65"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n10"
+          },
+          "tableSchema": {
+            "$ref": "#t:11"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "lotNumber",
+              "property": {
+                "$ref": "#p:66"
+              }
+            },
+            {
+              "fieldName": "supplierLotNumber",
+              "property": {
+                "$ref": "#p:67"
+              }
+            },
+            {
+              "fieldName": "receivedDate",
+              "property": {
+                "$ref": "#p:68"
+              }
+            },
+            {
+              "fieldName": "expiryDate",
+              "property": {
+                "$ref": "#p:69"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:70"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n11"
+          },
+          "tableSchema": {
+            "$ref": "#t:12"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "sampleId",
+              "property": {
+                "$ref": "#p:71"
+              }
+            },
+            {
+              "fieldName": "sampleType",
+              "property": {
+                "$ref": "#p:72"
+              }
+            },
+            {
+              "fieldName": "samplePoint",
+              "property": {
+                "$ref": "#p:73"
+              }
+            },
+            {
+              "fieldName": "collectedAt",
+              "property": {
+                "$ref": "#p:74"
+              }
+            },
+            {
+              "fieldName": "volumeMl",
+              "property": {
+                "$ref": "#p:75"
+              }
+            },
+            {
+              "fieldName": "storageCondition",
+              "property": {
+                "$ref": "#p:76"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n12"
+          },
+          "tableSchema": {
+            "$ref": "#t:13"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "methodId",
+              "property": {
+                "$ref": "#p:77"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:78"
+              }
+            },
+            {
+              "fieldName": "technique",
+              "property": {
+                "$ref": "#p:79"
+              }
+            },
+            {
+              "fieldName": "version",
+              "property": {
+                "$ref": "#p:80"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:81"
+              }
+            },
+            {
+              "fieldName": "instrumentType",
+              "property": {
+                "$ref": "#p:82"
+              }
+            },
+            {
+              "fieldName": "description",
+              "property": {
+                "$ref": "#p:83"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n13"
+          },
+          "tableSchema": {
+            "$ref": "#t:14"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "specId",
+              "property": {
+                "$ref": "#p:84"
+              }
+            },
+            {
+              "fieldName": "attribute",
+              "property": {
+                "$ref": "#p:85"
+              }
+            },
+            {
+              "fieldName": "category",
+              "property": {
+                "$ref": "#p:86"
+              }
+            },
+            {
+              "fieldName": "stage",
+              "property": {
+                "$ref": "#p:87"
+              }
+            },
+            {
+              "fieldName": "samplePoint",
+              "property": {
+                "$ref": "#p:88"
+              }
+            },
+            {
+              "fieldName": "unit",
+              "property": {
+                "$ref": "#p:89"
+              }
+            },
+            {
+              "fieldName": "limitType",
+              "property": {
+                "$ref": "#p:90"
+              }
+            },
+            {
+              "fieldName": "lowerLimit",
+              "property": {
+                "$ref": "#p:91"
+              }
+            },
+            {
+              "fieldName": "upperLimit",
+              "property": {
+                "$ref": "#p:92"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n14"
+          },
+          "tableSchema": {
+            "$ref": "#t:15"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "instrumentId",
+              "property": {
+                "$ref": "#p:93"
+              }
+            },
+            {
+              "fieldName": "name",
+              "property": {
+                "$ref": "#p:94"
+              }
+            },
+            {
+              "fieldName": "instrumentType",
+              "property": {
+                "$ref": "#p:95"
+              }
+            },
+            {
+              "fieldName": "manufacturer",
+              "property": {
+                "$ref": "#p:96"
+              }
+            },
+            {
+              "fieldName": "model",
+              "property": {
+                "$ref": "#p:97"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:98"
+              }
+            },
+            {
+              "fieldName": "lastCalibrated",
+              "property": {
+                "$ref": "#p:99"
+              }
+            },
+            {
+              "fieldName": "calibrationDue",
+              "property": {
+                "$ref": "#p:100"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n15"
+          },
+          "tableSchema": {
+            "$ref": "#t:16"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "resultId",
+              "property": {
+                "$ref": "#p:101"
+              }
+            },
+            {
+              "fieldName": "attempt",
+              "property": {
+                "$ref": "#p:102"
+              }
+            },
+            {
+              "fieldName": "qualifier",
+              "property": {
+                "$ref": "#p:103"
+              }
+            },
+            {
+              "fieldName": "value",
+              "property": {
+                "$ref": "#p:104"
+              }
+            },
+            {
+              "fieldName": "unit",
+              "property": {
+                "$ref": "#p:105"
+              }
+            },
+            {
+              "fieldName": "outcome",
+              "property": {
+                "$ref": "#p:106"
+              }
+            },
+            {
+              "fieldName": "resultStatus",
+              "property": {
+                "$ref": "#p:107"
+              }
+            },
+            {
+              "fieldName": "testedAt",
+              "property": {
+                "$ref": "#p:108"
+              }
+            },
+            {
+              "fieldName": "reviewedAt",
+              "property": {
+                "$ref": "#p:109"
+              }
+            },
+            {
+              "fieldName": "reviewStatus",
+              "property": {
+                "$ref": "#p:110"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n16"
+          },
+          "tableSchema": {
+            "$ref": "#t:17"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "deviationId",
+              "property": {
+                "$ref": "#p:111"
+              }
+            },
+            {
+              "fieldName": "deviationType",
+              "property": {
+                "$ref": "#p:112"
+              }
+            },
+            {
+              "fieldName": "title",
+              "property": {
+                "$ref": "#p:113"
+              }
+            },
+            {
+              "fieldName": "severity",
+              "property": {
+                "$ref": "#p:114"
+              }
+            },
+            {
+              "fieldName": "status",
+              "property": {
+                "$ref": "#p:115"
+              }
+            },
+            {
+              "fieldName": "openedDate",
+              "property": {
+                "$ref": "#p:116"
+              }
+            },
+            {
+              "fieldName": "closedDate",
+              "property": {
+                "$ref": "#p:117"
+              }
+            },
+            {
+              "fieldName": "rootCause",
+              "property": {
+                "$ref": "#p:118"
+              }
+            },
+            {
+              "fieldName": "capaNumber",
+              "property": {
+                "$ref": "#p:119"
+              }
+            }
+          ]
+        }
+      ],
+      "relationshipMappings": [
+        {
+          "relationship": {
+            "$ref": "#r:n0"
+          },
+          "tableSchema": {
+            "$ref": "#t:18"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "employeeId"
+          },
+          "toMapping": {
+            "fieldName": "labId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n1"
+          },
+          "tableSchema": {
+            "$ref": "#t:19"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "instrumentId"
+          },
+          "toMapping": {
+            "fieldName": "labId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n2"
+          },
+          "tableSchema": {
+            "$ref": "#t:20"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "bankId"
+          },
+          "toMapping": {
+            "fieldName": "productCode"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n3"
+          },
+          "tableSchema": {
+            "$ref": "#t:21"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "bankId"
+          },
+          "toMapping": {
+            "fieldName": "parentBankId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n4"
+          },
+          "tableSchema": {
+            "$ref": "#t:22"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "batchNumber"
+          },
+          "toMapping": {
+            "fieldName": "productCode"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n5"
+          },
+          "tableSchema": {
+            "$ref": "#t:23"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "batchNumber"
+          },
+          "toMapping": {
+            "fieldName": "bankId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n6"
+          },
+          "tableSchema": {
+            "$ref": "#t:24"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "startTime",
+              "property": {
+                "$ref": "#p:120"
+              }
+            },
+            {
+              "fieldName": "endTime",
+              "property": {
+                "$ref": "#p:121"
+              }
+            },
+            {
+              "fieldName": "workingVolumeL",
+              "property": {
+                "$ref": "#p:122"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "equipmentId"
+          },
+          "toMapping": {
+            "fieldName": "batchNumber"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n7"
+          },
+          "tableSchema": {
+            "$ref": "#t:25"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "startTime",
+              "property": {
+                "$ref": "#p:123"
+              }
+            },
+            {
+              "fieldName": "endTime",
+              "property": {
+                "$ref": "#p:124"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "batchNumber"
+          },
+          "toMapping": {
+            "fieldName": "protocolId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n8"
+          },
+          "tableSchema": {
+            "$ref": "#t:26"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "protocolId"
+          },
+          "toMapping": {
+            "fieldName": "stepId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n9"
+          },
+          "tableSchema": {
+            "$ref": "#t:27"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "stepId"
+          },
+          "toMapping": {
+            "fieldName": "nextStepId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n10"
+          },
+          "tableSchema": {
+            "$ref": "#t:28"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "protocolId"
+          },
+          "toMapping": {
+            "fieldName": "supersededProtocolId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n11"
+          },
+          "tableSchema": {
+            "$ref": "#t:29"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "stepId"
+          },
+          "toMapping": {
+            "fieldName": "materialId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n12"
+          },
+          "tableSchema": {
+            "$ref": "#t:30"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "lotNumber"
+          },
+          "toMapping": {
+            "fieldName": "materialId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n13"
+          },
+          "tableSchema": {
+            "$ref": "#t:31"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "quantity",
+              "property": {
+                "$ref": "#p:125"
+              }
+            },
+            {
+              "fieldName": "unit",
+              "property": {
+                "$ref": "#p:126"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "batchNumber"
+          },
+          "toMapping": {
+            "fieldName": "lotNumber"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n14"
+          },
+          "tableSchema": {
+            "$ref": "#t:32"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "executionId"
+          },
+          "toMapping": {
+            "fieldName": "batchNumber"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n15"
+          },
+          "tableSchema": {
+            "$ref": "#t:33"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "executionId"
+          },
+          "toMapping": {
+            "fieldName": "stepId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n16"
+          },
+          "tableSchema": {
+            "$ref": "#t:34"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "executionId"
+          },
+          "toMapping": {
+            "fieldName": "employeeId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n17"
+          },
+          "tableSchema": {
+            "$ref": "#t:35"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "role",
+              "property": {
+                "$ref": "#p:127"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "employeeId"
+          },
+          "toMapping": {
+            "fieldName": "batchNumber"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n18"
+          },
+          "tableSchema": {
+            "$ref": "#t:36"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "sampleId"
+          },
+          "toMapping": {
+            "fieldName": "batchNumber"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n19"
+          },
+          "tableSchema": {
+            "$ref": "#t:37"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "sampleId"
+          },
+          "toMapping": {
+            "fieldName": "executionId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n20"
+          },
+          "tableSchema": {
+            "$ref": "#t:38"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "resultId"
+          },
+          "toMapping": {
+            "fieldName": "sampleId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n21"
+          },
+          "tableSchema": {
+            "$ref": "#t:39"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "resultId"
+          },
+          "toMapping": {
+            "fieldName": "methodId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n22"
+          },
+          "tableSchema": {
+            "$ref": "#t:40"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "resultId"
+          },
+          "toMapping": {
+            "fieldName": "specId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n23"
+          },
+          "tableSchema": {
+            "$ref": "#t:41"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "resultId"
+          },
+          "toMapping": {
+            "fieldName": "labId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n24"
+          },
+          "tableSchema": {
+            "$ref": "#t:42"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "resultId"
+          },
+          "toMapping": {
+            "fieldName": "employeeId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n25"
+          },
+          "tableSchema": {
+            "$ref": "#t:43"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "resultId"
+          },
+          "toMapping": {
+            "fieldName": "employeeId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n26"
+          },
+          "tableSchema": {
+            "$ref": "#t:44"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "instrumentId"
+          },
+          "toMapping": {
+            "fieldName": "resultId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n27"
+          },
+          "tableSchema": {
+            "$ref": "#t:45"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "resultId"
+          },
+          "toMapping": {
+            "fieldName": "originalResultId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n28"
+          },
+          "tableSchema": {
+            "$ref": "#t:46"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "specId"
+          },
+          "toMapping": {
+            "fieldName": "productCode"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n29"
+          },
+          "tableSchema": {
+            "$ref": "#t:47"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "specId"
+          },
+          "toMapping": {
+            "fieldName": "methodId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n30"
+          },
+          "tableSchema": {
+            "$ref": "#t:48"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "deviationId"
+          },
+          "toMapping": {
+            "fieldName": "batchNumber"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n31"
+          },
+          "tableSchema": {
+            "$ref": "#t:49"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "deviationId"
+          },
+          "toMapping": {
+            "fieldName": "resultId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n32"
+          },
+          "tableSchema": {
+            "$ref": "#t:50"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "deviationId"
+          },
+          "toMapping": {
+            "fieldName": "executionId"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n33"
+          },
+          "tableSchema": {
+            "$ref": "#t:51"
+          },
+          "propertyMappings": [],
+          "fromMapping": {
+            "fieldName": "deviationId"
+          },
+          "toMapping": {
+            "fieldName": "employeeId"
+          }
+        }
+      ]
+    },
+    "configurations": {
+      "idsToIgnore": []
+    }
+  }
+}

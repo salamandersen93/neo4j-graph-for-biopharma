@@ -1,0 +1,18 @@
+instrumentId,name,instrumentType,manufacturer,model,status,lastCalibrated,calibrationDue
+INS-AD-ANALYTIC-PR-01,Plate Reader 1,Plate Reader,Agilent BioTek,Synergy H1,In Service,2026-06-12T00:00:00Z,2026-12-09T00:00:00Z
+INS-AD-ANALYTIC-HPLC-01,HPLC 1,HPLC,Agilent,1260 Infinity II,In Service,2026-06-14T00:00:00Z,2026-12-11T00:00:00Z
+INS-AD-ANALYTIC-CE-01,cIEF Analyzer 1,Capillary Electrophoresis,ProteinSimple,Maurice,In Service,2026-07-11T00:00:00Z,2027-01-07T00:00:00Z
+INS-AD-ANALYTIC-UV-01,Variable Pathlength UV 1,UV-Vis,C Technologies,SoloVPE,In Service,2026-05-16T00:00:00Z,2026-11-12T00:00:00Z
+INS-AD-ANALYTIC-LH-01,Liquid Handler 1,Liquid Handler,Hamilton,Microlab STAR,In Service,2026-05-21T00:00:00Z,2026-11-17T00:00:00Z
+INS-AD-ANALYTIC-PH-01,pH Meter 1,pH Meter,Mettler Toledo,SevenExcellence,In Service,2026-09-23T00:00:00Z,2027-03-22T00:00:00Z
+INS-QC-BIOCHEM-PR-01,Plate Reader 1,Plate Reader,Molecular Devices,SpectraMax iD5,In Service,2026-05-23T00:00:00Z,2026-11-19T00:00:00Z
+INS-QC-BIOCHEM-PR-02,Plate Reader 2,Plate Reader,BMG Labtech,CLARIOstar Plus,In Service,2026-09-07T00:00:00Z,2027-03-06T00:00:00Z
+INS-QC-BIOCHEM-HPLC-01,HPLC 1,HPLC,Agilent,1290 Infinity II,In Service,2026-07-16T00:00:00Z,2027-01-12T00:00:00Z
+INS-QC-BIOCHEM-HPLC-02,HPLC 2,HPLC,Waters,Alliance iS,In Service,2026-09-18T00:00:00Z,2027-03-17T00:00:00Z
+INS-QC-BIOCHEM-CE-01,cIEF Analyzer 1,Capillary Electrophoresis,ProteinSimple,Maurice,In Service,2026-07-21T00:00:00Z,2027-01-17T00:00:00Z
+INS-QC-BIOCHEM-UV-01,Variable Pathlength UV 1,UV-Vis,C Technologies,SoloVPE,In Service,2026-06-06T00:00:00Z,2026-12-03T00:00:00Z
+INS-QC-BIOCHEM-LH-01,Liquid Handler 1,Liquid Handler,Tecan,Fluent 780,In Service,2026-07-16T00:00:00Z,2027-01-12T00:00:00Z
+INS-QC-BIOCHEM-LH-02,Liquid Handler 2,Liquid Handler,Hamilton,Microlab STAR,In Service,2026-07-22T00:00:00Z,2027-01-18T00:00:00Z
+INS-QC-BIOCHEM-PH-01,pH Meter 1,pH Meter,Mettler Toledo,SevenExcellence,In Service,2026-07-04T00:00:00Z,2026-12-31T00:00:00Z
+INS-QC-MICRO-PR-01,Kinetic Plate Reader 1,Plate Reader,Agilent BioTek,Synergy HTX,In Service,2026-08-31T00:00:00Z,2027-02-27T00:00:00Z
+INS-QC-MOLBIO-QPCR-01,qPCR System 1,qPCR,Thermo Fisher Scientific,QuantStudio 7 Flex,In Service,2026-06-01T00:00:00Z,2026-11-28T00:00:00Z

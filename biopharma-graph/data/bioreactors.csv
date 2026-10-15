@@ -1,0 +1,10 @@
+equipmentId,type,manufacturer,model,nominalVolumeL,location,status,qualifiedDate
+BR-050-01,Single-use stirred tank,Sartorius,Biostat STR 50,50,PD Suite A,Qualified,2023-06-13T00:00:00Z
+BR-050-02,Single-use stirred tank,Sartorius,Biostat STR 50,50,PD Suite A,Qualified,2023-06-11T00:00:00Z
+BR-200-01,Single-use stirred tank,Cytiva,Xcellerex XDR-200,200,Clinical Suite 1,Qualified,2023-06-01T00:00:00Z
+BR-200-02,Single-use stirred tank,Cytiva,Xcellerex XDR-200,200,Clinical Suite 1,Qualified,2023-08-22T00:00:00Z
+BR-500-01,Single-use stirred tank,Thermo Fisher Scientific,HyPerforma DynaDrive S.U.B. 500,500,Clinical Suite 2,Qualified,2023-06-10T00:00:00Z
+BR-500-02,Single-use stirred tank,Thermo Fisher Scientific,HyPerforma DynaDrive S.U.B. 500,500,Clinical Suite 2,Qualified,2023-06-30T00:00:00Z
+BR-2000-01,Single-use stirred tank,Sartorius,Biostat STR 2000,2000,Commercial Suite 1,Qualified,2023-08-12T00:00:00Z
+BR-2000-02,Single-use stirred tank,Sartorius,Biostat STR 2000,2000,Commercial Suite 1,Qualified,2023-08-20T00:00:00Z
+BR-2000-03,Single-use stirred tank,Cytiva,Xcellerex XDR-2000,2000,Commercial Suite 2,Qualified,2023-06-23T00:00:00Z

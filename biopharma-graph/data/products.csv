@@ -1,0 +1,6 @@
+productCode,modality,targetAntigen,isotype,molecularWeightKDa,developmentPhase,formulation
+BTX-101,Monoclonal antibody,IL-23 p19,IgG1,148.5,Phase 3,"20 mM histidine, 8% sucrose, 0.04% polysorbate 80, pH 5.8"
+BTX-202,Monoclonal antibody,PD-1,IgG4,146.2,Phase 2,"25 mM acetate, 9% sucrose, 0.02% polysorbate 80, pH 5.5"
+BTX-303,Bispecific antibody,CD3 x BCMA,IgG1 (knob-into-hole),146.8,Phase 1,"20 mM histidine, 6% trehalose, 0.02% polysorbate 20, pH 6.0"
+BTX-404,Fc-fusion protein,TNF-alpha,IgG1 Fc,92.4,Phase 2,"10 mM phosphate, 140 mM NaCl, pH 6.5"
+BTX-505,Monoclonal antibody,TSLP,IgG1,148.1,Phase 3,"20 mM histidine, 5% proline, 0.03% polysorbate 80, pH 5.5"

@@ -1,0 +1,5 @@
+labId,name,department,building,gxpScope
+QC-BIOCHEM,QC Biochemistry,QC,Bldg 2 Rm 210,GMP QC
+QC-MICRO,QC Microbiology,QC,Bldg 2 Rm 118,GMP QC
+QC-MOLBIO,QC Molecular Biology,QC,Bldg 2 Rm 140,GMP QC
+AD-ANALYTIC,Analytical Development,AD,Bldg 4 Rm 305,Non-GMP Development

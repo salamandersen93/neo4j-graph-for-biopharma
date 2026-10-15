@@ -1,0 +1,15 @@
+materialId,name,category,supplier,grade
+MAT-001,CHO Production Basal Medium,Media,Thermo Fisher Scientific,cGMP
+MAT-002,CHO Feed Medium,Media,Thermo Fisher Scientific,cGMP
+MAT-003,Antifoam C Emulsion,Additive,MilliporeSigma,cGMP
+MAT-010,Depth Filter (Millistak+ HC),Filter,MilliporeSigma,cGMP
+MAT-011,Protein A Resin (MabSelect SuRe),Resin,Cytiva,cGMP
+MAT-012,Cation Exchange Resin (Capto S ImpAct),Resin,Cytiva,cGMP
+MAT-013,Anion Exchange Resin (Capto Q),Resin,Cytiva,cGMP
+MAT-014,HIC Resin (Capto Phenyl ImpRes),Resin,Cytiva,cGMP
+MAT-015,Viral Filter (Viresolve Pro),Filter,MilliporeSigma,cGMP
+MAT-016,UF/DF Cassette 30 kDa (Pellicon 3),Filter,MilliporeSigma,cGMP
+MAT-017,Sterile Filter 0.2 um (Sartopore 2 XLG),Filter,Sartorius,cGMP
+MAT-018,Equilibration/Wash Buffer (Tris),Buffer,In-house Buffer Prep,In-house
+MAT-019,Neutralization Buffer (Tris base),Buffer,In-house Buffer Prep,In-house
+MAT-020,Formulation Buffer,Buffer,In-house Buffer Prep,In-house

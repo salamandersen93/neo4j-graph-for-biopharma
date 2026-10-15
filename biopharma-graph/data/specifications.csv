@@ -1,0 +1,96 @@
+specId,attribute,category,stage,samplePoint,unit,limitType,lowerLimit,upperLimit
+SPEC-BTX101-TITER-H,Titer,Productivity,In-Process,Harvest (clarified),g/L,Report,,
+SPEC-BTX101-BIOB-H,Bioburden,Safety,In-Process,Harvest (clarified),CFU/10 mL,NMT,,10.0
+SPEC-BTX101-HCP-PA,Host Cell Protein,Process Impurity,In-Process,Protein A Eluate Pool,ng/mg,NMT,,8000.0
+SPEC-BTX101-HMW-PA,High Molecular Weight Species,Product Impurity,In-Process,Protein A Eluate Pool,%,Report,,
+SPEC-BTX101-HCP-CEX,Host Cell Protein,Process Impurity,In-Process,CEX Eluate Pool,ng/mg,NMT,,300.0
+SPEC-BTX101-HMW-CEX,High Molecular Weight Species,Product Impurity,In-Process,CEX Eluate Pool,%,NMT,,3.0
+SPEC-BTX101-CONC-UF,Protein Concentration,General,In-Process,UF/DF Retentate Pool,mg/mL,Range,88.0,112.0
+SPEC-BTX101-PH-UF,pH,General,In-Process,UF/DF Retentate Pool,pH units,Range,5.4,6.2
+SPEC-BTX101-CONC-DS,Protein Concentration,General,Release,Drug Substance,mg/mL,Range,90.0,110.0
+SPEC-BTX101-PH-DS,pH,General,Release,Drug Substance,pH units,Range,5.5,6.1
+SPEC-BTX101-MONO-DS,Monomer (SEC-HPLC),Purity,Release,Drug Substance,%,NLT,97.0,
+SPEC-BTX101-HMW-DS,High Molecular Weight Species,Product Impurity,Release,Drug Substance,%,NMT,,2.0
+SPEC-BTX101-MAIN-DS,Main Isoform (cIEF),Charge Variants,Release,Drug Substance,%,NLT,60.0,
+SPEC-BTX101-ACID-DS,Acidic Variants (cIEF),Charge Variants,Release,Drug Substance,%,NMT,,35.0
+SPEC-BTX101-HCP-DS,Host Cell Protein,Process Impurity,Release,Drug Substance,ng/mg,NMT,,100.0
+SPEC-BTX101-DNA-DS,Residual Host Cell DNA,Process Impurity,Release,Drug Substance,pg/mg,NMT,,10.0
+SPEC-BTX101-PRA-DS,Residual Protein A,Process Impurity,Release,Drug Substance,ng/mg,NMT,,10.0
+SPEC-BTX101-ENDO-DS,Endotoxin,Safety,Release,Drug Substance,EU/mg,NMT,,0.5
+SPEC-BTX101-BIOB-DS,Bioburden,Safety,Release,Drug Substance,CFU/10 mL,NMT,,1.0
+SPEC-BTX202-TITER-H,Titer,Productivity,In-Process,Harvest (clarified),g/L,Report,,
+SPEC-BTX202-BIOB-H,Bioburden,Safety,In-Process,Harvest (clarified),CFU/10 mL,NMT,,10.0
+SPEC-BTX202-HCP-PA,Host Cell Protein,Process Impurity,In-Process,Protein A Eluate Pool,ng/mg,NMT,,8000.0
+SPEC-BTX202-HMW-PA,High Molecular Weight Species,Product Impurity,In-Process,Protein A Eluate Pool,%,Report,,
+SPEC-BTX202-HCP-CEX,Host Cell Protein,Process Impurity,In-Process,CEX Eluate Pool,ng/mg,NMT,,300.0
+SPEC-BTX202-HMW-CEX,High Molecular Weight Species,Product Impurity,In-Process,CEX Eluate Pool,%,NMT,,3.0
+SPEC-BTX202-CONC-UF,Protein Concentration,General,In-Process,UF/DF Retentate Pool,mg/mL,Range,22.0,28.0
+SPEC-BTX202-PH-UF,pH,General,In-Process,UF/DF Retentate Pool,pH units,Range,5.1,5.9
+SPEC-BTX202-CONC-DS,Protein Concentration,General,Release,Drug Substance,mg/mL,Range,22.5,27.5
+SPEC-BTX202-PH-DS,pH,General,Release,Drug Substance,pH units,Range,5.2,5.8
+SPEC-BTX202-MONO-DS,Monomer (SEC-HPLC),Purity,Release,Drug Substance,%,NLT,97.0,
+SPEC-BTX202-HMW-DS,High Molecular Weight Species,Product Impurity,Release,Drug Substance,%,NMT,,2.0
+SPEC-BTX202-MAIN-DS,Main Isoform (cIEF),Charge Variants,Release,Drug Substance,%,NLT,55.0,
+SPEC-BTX202-ACID-DS,Acidic Variants (cIEF),Charge Variants,Release,Drug Substance,%,NMT,,35.0
+SPEC-BTX202-HCP-DS,Host Cell Protein,Process Impurity,Release,Drug Substance,ng/mg,NMT,,100.0
+SPEC-BTX202-DNA-DS,Residual Host Cell DNA,Process Impurity,Release,Drug Substance,pg/mg,NMT,,10.0
+SPEC-BTX202-PRA-DS,Residual Protein A,Process Impurity,Release,Drug Substance,ng/mg,NMT,,10.0
+SPEC-BTX202-ENDO-DS,Endotoxin,Safety,Release,Drug Substance,EU/mg,NMT,,0.5
+SPEC-BTX202-BIOB-DS,Bioburden,Safety,Release,Drug Substance,CFU/10 mL,NMT,,1.0
+SPEC-BTX303-TITER-H,Titer,Productivity,In-Process,Harvest (clarified),g/L,Report,,
+SPEC-BTX303-BIOB-H,Bioburden,Safety,In-Process,Harvest (clarified),CFU/10 mL,NMT,,10.0
+SPEC-BTX303-HCP-PA,Host Cell Protein,Process Impurity,In-Process,Protein A Eluate Pool,ng/mg,NMT,,8000.0
+SPEC-BTX303-HMW-PA,High Molecular Weight Species,Product Impurity,In-Process,Protein A Eluate Pool,%,Report,,
+SPEC-BTX303-HCP-CEX,Host Cell Protein,Process Impurity,In-Process,CEX Eluate Pool,ng/mg,NMT,,300.0
+SPEC-BTX303-HMW-CEX,High Molecular Weight Species,Product Impurity,In-Process,CEX Eluate Pool,%,NMT,,4.0
+SPEC-BTX303-CONC-UF,Protein Concentration,General,In-Process,UF/DF Retentate Pool,mg/mL,Range,17.6,22.4
+SPEC-BTX303-PH-UF,pH,General,In-Process,UF/DF Retentate Pool,pH units,Range,5.6,6.4
+SPEC-BTX303-CONC-DS,Protein Concentration,General,Release,Drug Substance,mg/mL,Range,18.0,22.0
+SPEC-BTX303-PH-DS,pH,General,Release,Drug Substance,pH units,Range,5.7,6.3
+SPEC-BTX303-MONO-DS,Monomer (SEC-HPLC),Purity,Release,Drug Substance,%,NLT,95.0,
+SPEC-BTX303-HMW-DS,High Molecular Weight Species,Product Impurity,Release,Drug Substance,%,NMT,,3.0
+SPEC-BTX303-MAIN-DS,Main Isoform (cIEF),Charge Variants,Release,Drug Substance,%,NLT,50.0,
+SPEC-BTX303-ACID-DS,Acidic Variants (cIEF),Charge Variants,Release,Drug Substance,%,NMT,,40.0
+SPEC-BTX303-HCP-DS,Host Cell Protein,Process Impurity,Release,Drug Substance,ng/mg,NMT,,100.0
+SPEC-BTX303-DNA-DS,Residual Host Cell DNA,Process Impurity,Release,Drug Substance,pg/mg,NMT,,10.0
+SPEC-BTX303-PRA-DS,Residual Protein A,Process Impurity,Release,Drug Substance,ng/mg,NMT,,10.0
+SPEC-BTX303-ENDO-DS,Endotoxin,Safety,Release,Drug Substance,EU/mg,NMT,,0.5
+SPEC-BTX303-BIOB-DS,Bioburden,Safety,Release,Drug Substance,CFU/10 mL,NMT,,1.0
+SPEC-BTX404-TITER-H,Titer,Productivity,In-Process,Harvest (clarified),g/L,Report,,
+SPEC-BTX404-BIOB-H,Bioburden,Safety,In-Process,Harvest (clarified),CFU/10 mL,NMT,,10.0
+SPEC-BTX404-HCP-PA,Host Cell Protein,Process Impurity,In-Process,Protein A Eluate Pool,ng/mg,NMT,,8000.0
+SPEC-BTX404-HMW-PA,High Molecular Weight Species,Product Impurity,In-Process,Protein A Eluate Pool,%,Report,,
+SPEC-BTX404-HCP-CEX,Host Cell Protein,Process Impurity,In-Process,CEX Eluate Pool,ng/mg,NMT,,300.0
+SPEC-BTX404-HMW-CEX,High Molecular Weight Species,Product Impurity,In-Process,CEX Eluate Pool,%,NMT,,3.0
+SPEC-BTX404-CONC-UF,Protein Concentration,General,In-Process,UF/DF Retentate Pool,mg/mL,Range,44.0,56.0
+SPEC-BTX404-PH-UF,pH,General,In-Process,UF/DF Retentate Pool,pH units,Range,6.1,6.9
+SPEC-BTX404-CONC-DS,Protein Concentration,General,Release,Drug Substance,mg/mL,Range,45.0,55.0
+SPEC-BTX404-PH-DS,pH,General,Release,Drug Substance,pH units,Range,6.2,6.8
+SPEC-BTX404-MONO-DS,Monomer (SEC-HPLC),Purity,Release,Drug Substance,%,NLT,96.0,
+SPEC-BTX404-HMW-DS,High Molecular Weight Species,Product Impurity,Release,Drug Substance,%,NMT,,3.0
+SPEC-BTX404-MAIN-DS,Main Isoform (cIEF),Charge Variants,Release,Drug Substance,%,NLT,55.0,
+SPEC-BTX404-ACID-DS,Acidic Variants (cIEF),Charge Variants,Release,Drug Substance,%,NMT,,40.0
+SPEC-BTX404-HCP-DS,Host Cell Protein,Process Impurity,Release,Drug Substance,ng/mg,NMT,,100.0
+SPEC-BTX404-DNA-DS,Residual Host Cell DNA,Process Impurity,Release,Drug Substance,pg/mg,NMT,,10.0
+SPEC-BTX404-PRA-DS,Residual Protein A,Process Impurity,Release,Drug Substance,ng/mg,NMT,,10.0
+SPEC-BTX404-ENDO-DS,Endotoxin,Safety,Release,Drug Substance,EU/mg,NMT,,0.5
+SPEC-BTX404-BIOB-DS,Bioburden,Safety,Release,Drug Substance,CFU/10 mL,NMT,,1.0
+SPEC-BTX505-TITER-H,Titer,Productivity,In-Process,Harvest (clarified),g/L,Report,,
+SPEC-BTX505-BIOB-H,Bioburden,Safety,In-Process,Harvest (clarified),CFU/10 mL,NMT,,10.0
+SPEC-BTX505-HCP-PA,Host Cell Protein,Process Impurity,In-Process,Protein A Eluate Pool,ng/mg,NMT,,8000.0
+SPEC-BTX505-HMW-PA,High Molecular Weight Species,Product Impurity,In-Process,Protein A Eluate Pool,%,Report,,
+SPEC-BTX505-HCP-CEX,Host Cell Protein,Process Impurity,In-Process,CEX Eluate Pool,ng/mg,NMT,,300.0
+SPEC-BTX505-HMW-CEX,High Molecular Weight Species,Product Impurity,In-Process,CEX Eluate Pool,%,NMT,,3.0
+SPEC-BTX505-CONC-UF,Protein Concentration,General,In-Process,UF/DF Retentate Pool,mg/mL,Range,132.0,168.0
+SPEC-BTX505-PH-UF,pH,General,In-Process,UF/DF Retentate Pool,pH units,Range,5.1,5.9
+SPEC-BTX505-CONC-DS,Protein Concentration,General,Release,Drug Substance,mg/mL,Range,135.0,165.0
+SPEC-BTX505-PH-DS,pH,General,Release,Drug Substance,pH units,Range,5.2,5.8
+SPEC-BTX505-MONO-DS,Monomer (SEC-HPLC),Purity,Release,Drug Substance,%,NLT,97.0,
+SPEC-BTX505-HMW-DS,High Molecular Weight Species,Product Impurity,Release,Drug Substance,%,NMT,,2.0
+SPEC-BTX505-MAIN-DS,Main Isoform (cIEF),Charge Variants,Release,Drug Substance,%,NLT,60.0,
+SPEC-BTX505-ACID-DS,Acidic Variants (cIEF),Charge Variants,Release,Drug Substance,%,NMT,,35.0
+SPEC-BTX505-HCP-DS,Host Cell Protein,Process Impurity,Release,Drug Substance,ng/mg,NMT,,100.0
+SPEC-BTX505-DNA-DS,Residual Host Cell DNA,Process Impurity,Release,Drug Substance,pg/mg,NMT,,10.0
+SPEC-BTX505-PRA-DS,Residual Protein A,Process Impurity,Release,Drug Substance,ng/mg,NMT,,10.0
+SPEC-BTX505-ENDO-DS,Endotoxin,Safety,Release,Drug Substance,EU/mg,NMT,,0.5
+SPEC-BTX505-BIOB-DS,Bioburden,Safety,Release,Drug Substance,CFU/10 mL,NMT,,1.0
